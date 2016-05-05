@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#hero {
+	background-color: red;
+}
+
+#about-us {
+	background-color: red;
+}
+
+footer {
+	background-color: yellow;
+}
+
+#contact {
+	text-align: right;
+}
