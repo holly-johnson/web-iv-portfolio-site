@@ -17,3 +17,11 @@ footer {
 #contact {
 	text-align: right;
 }
+
+.row {
+  max-width: 82.5rem;
+}
+
+ul li {
+	display: inline-block;
+}
