@@ -19,9 +19,13 @@ footer {
 }
 
 .row {
-  max-width: 82.5rem;
+  max-width: 75rem;
 }
 
 ul li {
-	display: inline-block;
+	display: inline;
+}
+
+nav ul {
+	text-align: right;
 }
