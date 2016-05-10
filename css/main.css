@@ -30,6 +30,39 @@ nav ul {
 	text-align: right;
 }
 
+.circle {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px; 
+	background-color: black;
+	/* width and height can be anything, as long as they're equal */
+}
+
+#circle-one {
+    position: absolute;
+    top: 160px;
+    left: 1040px;
+    width: 500px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+#circle-two {
+    position: absolute;
+    top: 670px;
+    left: -120px;
+    width: 500px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+#hero-padding {
+	padding-top: 280px; /* remove? */
+}
+
+
 @media screen and (max-width: 39.9375em) {
 	footer{
 		text-align: center;		
