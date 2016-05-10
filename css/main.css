@@ -30,12 +30,11 @@ nav ul {
 	text-align: right;
 }
 
-.circle {
+/* .circle {
 	border-radius: 50%;
 	width: 200px;
 	height: 200px; 
 	background-color: black;
-	/* width and height can be anything, as long as they're equal */
 }
 
 #circle-one {
@@ -57,9 +56,17 @@ nav ul {
     background: rgba(0, 0, 0, 0.5);
     z-index: 20;
 }
+*/
 
 #hero-padding {
 	padding-top: 280px; /* remove? */
+}
+header {
+	padding-top: 1rem;
+}
+
+.gallery {
+	margin-bottom: 2rem;
 }
 
 

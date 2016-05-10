@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -73,14 +74,39 @@
     </div>
 
 <!-- =========== SLICK SLIDER ========== -->
-
-	<div class="row">
-		<div class="small-12 medium-8 columns align-center">
-            <div>Image</div>
-            <div>Image</div>
-            <div>Image</div>
-    	</div>
-    </div>
+	<nav>
+        <div class="row content">
+            <div class="small-10 medium-8 columns small-centered">
+                <p class="text-center">View Another Project</p>
+                <div class="slider view-projects">
+                    <div class="small-centered">
+                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                    </div>
+                    <div>
+                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                    </div>
+                    <div>
+                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                    </div>
+                    <div>
+                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                    </div>
+                    <div>
+                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                    </div>
+                    <div>
+                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                    </div>
+                    <div>
+                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                    </div>
+                    <div>
+                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</nav>
 
 <!-- =========== FOOTER ========== -->
 
@@ -107,18 +133,59 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
     
 
-	<script type="text/javascript">    
-		$(document).ready(function(){
-		  $('.your-class').slick({
-			setting-name: setting-value
-		  });
-		});
-    </script>
+
+  <script>
+  
+  
+  <!--Slick Slider-->
+  
+  $(document).ready(function() {
+
+    $('.view-projects').slick({
+        // dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 2,
+                // centerMode: true,
+
+            }
+
+        }, {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2,
+                dots: true,
+                infinite: true,
+
+            }
+
+
+        }, {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                dots: true,
+                infinite: true,
+                
+            }
+    
+        }]
+    });
+
+
+  });
+  </script>
 	
   </body>
 </html>
