@@ -152,6 +152,10 @@ header.nav {
   left: 0;
 }
 
+section#slider h2 {
+	text-align: center;
+}
+
 @media screen and (max-width: 39.9375em) {
 	footer{
 		text-align: center;		
