@@ -6,12 +6,14 @@
 	background-color: red;
 }
 
-#about-us {
+#about {
 	background-color: red;
+	padding: 40px 0;
 }
 
 footer {
 	background-color: yellow;
+	padding: 10px;
 }
 
 #contact {
@@ -61,17 +63,26 @@ nav ul {
 #hero-padding {
 	padding-top: 280px; /* remove? */
 }
-header {
-	padding-top: 1rem;
+
+header.nav {
+	padding-top: 2rem;
 }
 
-.gallery {
+.gallery, .small-gallery {
 	margin-bottom: 2rem;
+}
+
+.slider {
+	height: auto;
 }
 
 
 @media screen and (max-width: 39.9375em) {
 	footer{
 		text-align: center;		
+	}
+	
+	.small-gallery-small {
+	margin-bottom: 2rem;
 	}
 	}

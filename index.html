@@ -12,7 +12,7 @@
   <body>
   
 <section id="hero">  
-    <header class="row">
+    <header class="row nav">
     	<div class="small-6 columns">
         	<a href="#">
             	<img data-interchange="[img/logo.png, small], [img/logo.png, medium], [img/logo.png, large]">        
@@ -21,8 +21,8 @@
         <div class="small-6 columns float-right">
         	<nav>
             	<ul>
-                	<li><a href="#">Work</a></li>
-                    <li><a href="#">About</a></li>
+                	<li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
                     <li class="hide-for-small-only"><a><img data-interchange="[http://placehold.it/30x30, small], [http://placehold.it/30x30, medium], [http://placehold.it/30x30, large]"></a></li>
                     <li class="hide-for-small-only"><a><img data-interchange="[http://placehold.it/30x30, small], [http://placehold.it/30x30, medium], [http://placehold.it/30x30, large]"></a></li>
                     <li class="hide-for-small-only"><a><img data-interchange="[http://placehold.it/30x30, small], [http://placehold.it/30x30, medium], [http://placehold.it/30x30, large]"></a></li>
@@ -42,7 +42,7 @@
 
 <!-- GALLERY SECTION -->
 
-<section>
+<section id="work">
 
 <!-- =========== FIRST ROW GALLERY ========== -->
 	<div class="row gallery" style="margin-top:2rem;"> <!-- remove inline style -->
@@ -56,14 +56,19 @@
 <!-- =========== SECOND ROW GALLERY ========== -->    
     <div class="row gallery">
     	<div class="small-12 medium-5 medium-offset-3 columns">
-        	<a>
-        	  	<img data-interchange="[http://placehold.it/600x300, small], [http://placehold.it/500x150, medium], [http://placehold.it/500x150, large]">
-        	<a>	  
-              	<img data-interchange="[http://placehold.it/600x300, small], [http://placehold.it/500x150, medium], [http://placehold.it/500x150, large]">
-        	</a>
+			<div class="small-gallery">
+                <a>
+                    <img data-interchange="[http://placehold.it/600x300, small], [http://placehold.it/500x150, medium], [http://placehold.it/500x150, large]">
+                </a>    
+        	</div>
+			<div class="small-gallery-small">
+                <a>	  
+                    <img data-interchange="[http://placehold.it/600x300, small], [http://placehold.it/500x150, medium], [http://placehold.it/500x150, large]">
+                </a>
+        	</div>
         </div>
         <div class="small-12 medium-4 columns">
-        	<img data-interchange="[http://placehold.it/600x300, small], [http://placehold.it/400x305, medium], [http://placehold.it/400x305, large]"> <!--do I need to put this in here again? -->
+        	<img data-interchange="[http://placehold.it/600x300, small], [http://placehold.it/400x340, medium], [http://placehold.it/400x340, large]"> <!--do I need to put this in here again? -->
         </div>
     </div>
     
@@ -86,8 +91,8 @@
 <!-- =========== FIFTH ROW GALLERY ========== -->
 
 	<div class="row gallery">
-    	<div class="small-12 medium-6 columns">
-        	<img data-interchange="[img/600-300-small.png, small], [img/http://placehold.it/1000x150, medium], [http://placehold.it/1000x150, large]"> 
+    	<div class="small-12 medium-6 columns small-gallery">
+        	<img data-interchange="[img/600-300-small.png, small], [http://placehold.it/1000x150, medium], [http://placehold.it/1000x150, large]"> 
         </div>
         <div class="small-12 medium-6 columns">
         	<img data-interchange="[img/600-300-small.png, small], [http://placehold.it/1000x300, medium], [http://placehold.it/1000x300, large]"> 
@@ -95,19 +100,19 @@
     </div>
 </section>
 
-<!-- =========== ABOUT US ========== -->
+<!-- =========== ABOUT ME ========== --> <!-- SWITCH THESE FOR LARGE/MEDIUM -->
  
-<section id="about-us">
-	<div class="row">
-		<div class="small-12 medium-6 large-5 columns medium-offset-1">
+<section id="about">
+	<div class="row clearfix">
+    	<div class="small-12 medium-4 columns medium-only-offset-1">
+        	<img data-interchange="[img/600-300-small.png, small], [img/600-300-small.png, medium], [img/600-300-small.png, large]">         	
+        </div>
+        <div class="small-12 medium-6 large-5 columns medium-offset-1">
             <header>
                 <h2>About Me.</h2>
             </header>
             <p>This is a few words about me. Blah de dah ta do. This is a few words about me. Blah de dah ta do. This is a few words about me. Blah de dah ta do. This is a few words about me. Blah de dah ta do. This is a few words about me. Blah de dah ta do. This is a few words about me. Blah de dah ta do.</p>
     	</div>
-    	<div class="small-12 medium-4 columns medium-only-offset-1">
-        	<img data-interchange="[img/600-300-small.png, small], [img/600-300-small.png, medium], [img/600-300-small.png, large]">         	
-        </div>
     </div>
 </section>
 

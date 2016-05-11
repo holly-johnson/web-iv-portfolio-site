@@ -13,8 +13,8 @@
   </head>
   <body>
   
-<section id="hero">  
-    <header class="row">
+<section>  
+    <header class="row nav">
     	<div class="small-6 columns">
         	<a href="#">
             	<img data-interchange="[img/logo.png, small], [img/logo.png, medium], [img/logo.png, large]">        
@@ -23,8 +23,8 @@
         <div class="small-6 columns float-right">
         	<nav>
             	<ul>
-                	<li><a href="#">Work</a></li>
-                    <li><a href="#">About</a></li>
+                	<li><a href="index.html#work">Work</a></li>
+                    <li><a href="index.html#about">About</a></li>
                     <li class="hide-for-small-only"><a><img data-interchange="[http://placehold.it/30x30, small], [http://placehold.it/30x30, medium], [http://placehold.it/30x30, large]"></a></li>
                     <li class="hide-for-small-only"><a><img data-interchange="[http://placehold.it/30x30, small], [http://placehold.it/30x30, medium], [http://placehold.it/30x30, large]"></a></li>
                     <li class="hide-for-small-only"><a><img data-interchange="[http://placehold.it/30x30, small], [http://placehold.it/30x30, medium], [http://placehold.it/30x30, large]"></a></li>
@@ -52,8 +52,8 @@
 <section>
 
 <!-- =========== FIRST ROW GALLERY ========== -->
-	<div class="row">
-    	<div class="small-12 medium-4 columns">
+	<div class="row gallery">
+    	<div class="small-12 medium-4 columns small-gallery">
        		<a>
               	<img data-interchange="[http://placehold.it/600x300, small], [http://placehold.it/600x800, medium], [http://placehold.it/600x800, large]">
         	</a>
@@ -67,46 +67,46 @@
     
 <!-- =========== SECOND ROW GALLERY ========== -->
 
-	<div class="row">
+	<div class="row gallery">
     	<div class="small-12 medium-8 columns">
         	<img data-interchange="[http://placehold.it/600x300, small], [http://placehold.it/1000x150, medium], [http://placehold.it/1000x150, large]"> 
         </div>
     </div>
 
 <!-- =========== SLICK SLIDER ========== -->
-	<nav>
-        <div class="row content">
+	
+        <div class="row align-center">
             <div class="small-10 medium-8 columns small-centered">
-                <p class="text-center">View Another Project</p>
-                <div class="slider view-projects">
+                
+                <div class="slider responsive">
                     <div class="small-centered">
-                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                        <a><img src="http://placehold.it/150x150"></a>
                     </div>
                     <div>
-                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                        <a><img src="http://placehold.it/150x150"></a>
                     </div>
                     <div>
-                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                        <a><img src="http://placehold.it/150x150"></a>
                     </div>
                     <div>
-                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                        <a><img src="http://placehold.it/150x150"></a>
                     </div>
                     <div>
-                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                        <a><img src="http://placehold.it/150x150"></a>
                     </div>
                     <div>
-                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                        <a><img src="http://placehold.it/150x150"></a>
                     </div>
                     <div>
-                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                        <a><img src="http://placehold.it/150x150"></a>
                     </div>
                     <div>
-                        <a><img data-interchange="[http://placehold.it/100x100, small]"></a>
+                        <a><img src="http://placehold.it/150x150"></a>
                     </div>
                 </div>
             </div>
         </div>
-	</nav>
+	
 
 <!-- =========== FOOTER ========== -->
 
@@ -144,16 +144,16 @@
   
   $(document).ready(function() {
 
-    $('.view-projects').slick({
+    $('.responsive').slick({
         // dots: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 2,
         responsive: [{
             breakpoint: 1024,
             settings: {
-                slidesToShow: 5,
+                slidesToShow: 4,
                 slidesToScroll: 2,
                 // centerMode: true,
 
