@@ -12,7 +12,10 @@
   </head>
   <body>
   
-<section id="hero">  
+<section id="hero"> 
+	<div class="background-image toggle-image first-image show"></div>
+    <div class="background-image toggle-image second-image"></div>
+    <div class="background-image toggle-image third-image"></div> 
     <header class="row nav">
     	<div class="small-6 columns">
         	<a href="#">
@@ -193,13 +196,15 @@
     <script src="js/app.js"></script>
  
  <!-- TOGGLE HERO IMAGE -->
+ 
+<script>
     
-<!--    function cycleBackgrounds() {
+function cycleBackgrounds() {
 	var index = 0;
 
 	$imageEls = $('.toggle-image'); // Get the images to be cycled.
 
-	setInterval(function () {
+	setInterval(function() {
 		// Get the next index.  If at end, restart to the beginning.
 		index = index + 1 < $imageEls.length ? index + 1 : 0;
 		// Show the next image.
@@ -211,9 +216,11 @@
 };
 
 // Document Ready.
-$(function () {
+$(function() {
 	cycleBackgrounds();
 });
--->    
+
+</script>
+
   </body>
 </html>

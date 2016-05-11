@@ -3,7 +3,8 @@
 
 
 #hero {
-	background-color: red;
+	background-color: black;
+	opacity: .5;
 }
 
 #about {
