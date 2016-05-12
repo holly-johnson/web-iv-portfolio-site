@@ -128,6 +128,45 @@ header.nav {
 }
 
 
+
+
+section#slider h2 {
+	text-align: center;
+}
+
+ul {
+	margin-left: 0;
+}
+
+#hero nav ul:first-child li {
+	margin-right: 25px;
+}
+
+
+/*SMALL SCREEN*/
+
+@media screen and (max-width: 39.9375em) {
+	footer{
+		text-align: center;		
+	}
+	
+	.small-gallery-small {
+	margin-bottom: 2rem;
+	}
+	
+	#contact {
+		text-align: inherit;
+	}
+	
+	.toggle-image {
+ 	height: 439px;
+	}
+	}
+	
+/*MEDIUM SCREEN*/
+
+@media only screen and (min-width: 40.063em) { 
+
 /* HOVER STATES FOR CONTENT */
 
 .hoverParent {
@@ -152,24 +191,4 @@ header.nav {
   left: 0;
 }
 
-section#slider h2 {
-	text-align: center;
-}
-
-@media screen and (max-width: 39.9375em) {
-	footer{
-		text-align: center;		
-	}
-	
-	.small-gallery-small {
-	margin-bottom: 2rem;
-	}
-	
-	#contact {
-		text-align: inherit;
-	}
-	
-	.toggle-image {
- 	height: 439px;
-	}
-	}
+}	
