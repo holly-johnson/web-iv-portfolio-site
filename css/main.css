@@ -8,12 +8,13 @@
 
 #about {
 	background-color: red;
-	padding: 40px 0;
+	padding: 6% 0;
 }
 
 footer {
 	background-color: yellow;
-	padding: 10px;
+	padding-bottom: 13%;
+	padding-top: 2%;
 }
 
 #contact {
@@ -61,7 +62,7 @@ nav ul {
 */
 
 #hero-padding {
-	padding-top: 280px; /* remove? */
+	padding-top: 360px; /* remove? */
 }
 
 header.nav {
@@ -96,7 +97,7 @@ header.nav {
 	width: 100%;
 	top: 0;
 	left: 0;
- 	height: 508px;
+ 	height: 588px;
 	transition: opacity 1s ease-in-out;
 }
 
@@ -131,9 +132,6 @@ header.nav {
 	opacity: 1;
 }
 
-
-
-
 section#slider h2 {
 	text-align: center;
 }
@@ -154,6 +152,10 @@ footer {
 	height: 160px;
 }
 
+section#work {
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
 
 /*SMALL SCREEN*/
 
