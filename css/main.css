@@ -76,6 +76,10 @@ header.nav {
 	height: auto;
 }
 
+#slider {
+	padding-top: 3%;
+	padding-bottom: 7%;
+}
 
 /* TESTING FOR HERO IMAGE */
 
@@ -138,8 +142,16 @@ ul {
 	margin-left: 0;
 }
 
-#hero nav ul:first-child li {
+nav.main-nav ul:first-child li {
 	margin-right: 25px;
+}
+
+#project h1 {
+	padding-top: 7%;
+}
+
+footer {
+	height: 160px;
 }
 
 
