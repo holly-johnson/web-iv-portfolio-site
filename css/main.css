@@ -153,19 +153,20 @@ footer {
 }
 
 section#work {
-	padding-top: 4%;
+	padding-top: 6%;
 	padding-bottom: 4%;
 }
 
 /*SMALL SCREEN*/
 
 @media screen and (max-width: 39.9375em) {
+	
 	footer{
 		text-align: center;		
 	}
 	
 	.small-gallery-small {
-	margin-bottom: 2rem;
+		margin-bottom: 2rem;
 	}
 	
 	#contact {
@@ -173,9 +174,15 @@ section#work {
 	}
 	
 	.toggle-image {
- 	height: 439px;
+ 		height: 439px;
+	}
+	
+	#hero-padding {
+		padding-top: 284px;
 	}
 	}
+	
+	
 	
 /*MEDIUM SCREEN*/
 
@@ -183,26 +190,26 @@ section#work {
 
 /* HOVER STATES FOR CONTENT */
 
-.hoverParent {
-  position: relative;
-  float:left;
-}
-
-.hoverContent {
-  display: none;
-}
-
-.hoverParent:hover .hoverContent {
-  background-color: rgba(163, 163, 163, 0.5);
-  text-align: center;
-  color: white;
-  padding-top: 8%;
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+	.hoverParent {
+	  position: relative;
+	  float:left;
+	}
+	
+	.hoverContent {
+	  display: none;
+	}
+	
+	.hoverParent:hover .hoverContent {
+	  background-color: rgba(163, 163, 163, 0.5);
+	  text-align: center;
+	  color: white;
+	  padding-top: 8%;
+	  width: 100%;
+	  height: 100%;
+	  display: block;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	}
 
 }	
