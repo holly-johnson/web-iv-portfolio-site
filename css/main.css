@@ -90,16 +90,16 @@ nav.main-nav ul:first-child li {
 	margin-right: 25px;
 }
 
-nav ul a:hover {
-/*	border-bottom: 4px solid #19D78B;
+/* FIGURE OUT THE HOVER UNDERLINE nav ul a:hover {
+	border-bottom: 4px solid #19D78B;
 	padding-bottom: .1rem;
 	border-bottom-left-radius: 2rem;
-*/	background: transparent;
+	background: transparent;
   	border-radius: 10px;
   	height: 10px;
   	width: 255px;
   	box-shadow: 0 55px 0 0 #19D78B;
-}
+}*/
 
 
 /* ====================== Structure =======================*/
@@ -167,6 +167,36 @@ footer {
 
 /* =============== 5.1 Sprites ==============*/
 
+div.facebook {
+	background: url(../img/sprite-facebook.png) no-repeat;
+}
+
+div.twitter {
+	background: url(../img/sprite-twitter.png) no-repeat;
+}
+
+div.instagram {
+	background: url(../img/sprite-instagram.png) no-repeat;
+}
+
+div.sprite {
+    background-position: 0 0;
+    margin: 0 20px 0 0;
+	display: inline;
+}
+
+div.sprite, div.sprite a {
+	width: 21px;
+    height: 21px;
+}
+
+div.sprite:hover {
+    background-position: 0 -21px;
+}
+
+div.sprite a {
+	display: inline-block;
+}
 
 
 /* =============== 5.2 Background Images ===============*/
@@ -221,7 +251,7 @@ footer {
 	opacity: 1;
 }
 
-/* .circle {
+.circle {
 	border-radius: 50%;
 	width: 200px;
 	height: 200px; 
@@ -229,13 +259,15 @@ footer {
 }
 
 #circle-one {
-    position: absolute;
+	position: absolute;
     top: 160px;
     left: 1040px;
     width: 500px;
     height: 500px;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 20;
+	/*
+    background: rgba(25, 183, 141, 0.5);
+*/    z-index: 20;
+	background: rgba(25, 183, 141, 0.5) 50% 0 scroll repeat-y
 }
 
 #circle-two {
@@ -247,7 +279,7 @@ footer {
     background: rgba(0, 0, 0, 0.5);
     z-index: 20;
 }
-*/
+
 
 /* ====================== Utility =======================*/
 
@@ -352,25 +384,25 @@ footer {
 	/* HOVER STATES FOR CONTENT */
 
 	.hoverParent {
-	  position: relative;
-	  float:left;
+	  	position: relative;
+	  	float:left;
 	}
 	
 	.hoverContent {
-	  display: none;
+	  	display: none;
 	}
 	
 	.hoverParent:hover .hoverContent {
-	  background-color: rgba(163, 163, 163, 0.5);
-	  text-align: center;
-	  color: white;
-	  padding-top: 8%;
-	  width: 100%;
-	  height: 100%;
-	  display: block;
-	  position: absolute;
-	  top: 0;
-	  left: 0;
+	  	background-color: rgba(254,212,2,0.9);
+	  	text-align: center;
+	  	color: white;
+	 	padding-top: 8%;
+	  	width: 100%;
+	  	height: 100%;
+	  	display: block;
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
 	}
 
 }	

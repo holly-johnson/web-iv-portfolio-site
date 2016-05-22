@@ -33,9 +33,7 @@
                 </ul>
                 <ul class="small-6 columns float-right hide-for-small-only">
                     <li>
-                    	<a href="http://www.facebook.com">
-                        	<img alt="social" data-interchange="[http://placehold.it/30x30, small], [http://placehold.it/30x30, medium], [http://placehold.it/30x30, large]">
-                    	</a>
+                    	<div class="sprite facebook"><a href="http://www.facebook.com" target="_blank"></a></div>
                     </li>
                     <li>
                     	<a href="http://www.pinterest.com">
@@ -80,6 +78,7 @@
                 </div>
         	</a>
         </div>
+        <div class="circle" id="circle-one"></div> 
     </div>
     
 <!-- =========== SECOND ROW GALLERY ========== -->    
@@ -127,7 +126,7 @@
 
 	<div class="row gallery">
     	<div class="small-12 columns">
-			<a href="project.html">
+			<a href="young-living.html">
                 <div class="hoverParent">
                     <div class="hoverContent">
                         <header>
@@ -135,7 +134,7 @@
                         </header> 
                         <p>Type of Project</p>
                     </div>
-                    <img alt="project thumb" data-interchange="[/img/young-living-large.jpg, (small)], [/img/young-living-large.jpg, (medium)], [/img/young-living-large.jpg, (large)]">
+                    <img alt="project thumb" data-interchange="[img/young-living/medium.jpg, (small)], [img/young-living/medium.jpg, (medium)], [img/young-living/large.jpg, (large)]" src="img/young-living/large.jpg"> <!-- not sure this is right -->
                 </div>
         	</a>
         </div>
@@ -247,6 +246,11 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/foundation/foundation.interchange.js"></script>
+ 
+  <script>
+    $(document).foundation();
+  </script>
  
  <!-- TOGGLE HERO IMAGE -->
  
@@ -272,9 +276,6 @@ function cycleBackgrounds() {
 $(function() {
 	cycleBackgrounds();
 });
-
-<!--Do I need? Thought it would make my interchange work, didn't -->
-$(document).foundation();
 
 </script>
 
