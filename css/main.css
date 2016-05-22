@@ -1,29 +1,82 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* ========= TOC ============*/   
+ 
+ /*
+--------------------------------1 Typography
+--------------------------------------1.1 Body
+--------------------------------------1.2 Headings
+--------------------------------------1.3 Buttons
+--------------------------------------1.4 Forms
+--------------------------------2 Navigation Menu
+--------------------------------------2.1 Main
+--------------------------------4 Structure
+--------------------------------------4.1 Site Padding and Margin
+--------------------------------------4.2 Site Buttons
+--------------------------------------4.3 Site Slider
+--------------------------------------4.4 Site Header
+--------------------------------------4.5 Site Footer
+--------------------------------5 Media
+--------------------------------------5.1 Sprites
+--------------------------------------5.2 Background Images
+--------------------------------6 Utility
+--------------------------------------6.1 Colors
+--------------------------------------6.2 Floats, Positions, Displays
+--------------------------------7 Media Queries
+--------------------------------------4.1 Typography
+--------------------------------------4.2 Structure
+------------------------------------------4.2.1 Padding and Margin
+------------------------------------------4.2.2 Header
+------------------------------------------4.2.3 Footer
+------------------------------------------4.2.4 Positions, Floats, Widths
+--------------------------------------5.1 Media
 
-#hero {
-	background-color: rgba(165,0,2,0.37);
+
+*/
+
+/* ====================== 1 Typography =======================*/
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
 }
 
-#about {
-	background-color: red;
-	padding: 6% 0;
-}
-
-footer {
-	background-color: yellow;
-	padding-bottom: 13%;
-	padding-top: 2%;
-}
+/* =============== 1.1 Body ==============*/
 
 #contact {
 	text-align: right;
 }
 
-.row {
-  max-width: 75rem;
+#about {
+	color: white;
 }
+
+footer {
+	color: white;
+}
+
+#hero {
+	color: white;
+}
+
+/* =============== 1.2 Headings ==============*/
+
+section#slider h2 {
+	text-align: center;
+}
+
+
+/* =============== 1.3 Buttons ==============*/
+
+
+
+/* =============== 1.4 Forms ==============*/
+
+
+
+/* ====================== Navigation =======================*/
+
+/* =============== Main ==============*/
 
 ul li {
 	display: inline;
@@ -33,33 +86,29 @@ nav ul {
 	text-align: right;
 }
 
-/* .circle {
-	border-radius: 50%;
-	width: 200px;
-	height: 200px; 
-	background-color: black;
+nav.main-nav ul:first-child li {
+	margin-right: 25px;
 }
 
-#circle-one {
-    position: absolute;
-    top: 160px;
-    left: 1040px;
-    width: 500px;
-    height: 500px;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 20;
+nav ul a:hover {
+/*	border-bottom: 4px solid #19D78B;
+	padding-bottom: .1rem;
+	border-bottom-left-radius: 2rem;
+*/	background: transparent;
+  	border-radius: 10px;
+  	height: 10px;
+  	width: 255px;
+  	box-shadow: 0 55px 0 0 #19D78B;
 }
 
-#circle-two {
-    position: absolute;
-    top: 670px;
-    left: -120px;
-    width: 500px;
-    height: 500px;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 20;
+
+/* ====================== Structure =======================*/
+
+.row {
+  max-width: 75rem;
 }
-*/
+
+/* =============== Padding and Margin ==============*/
 
 #hero-padding {
 	padding-top: 360px; /* remove? */
@@ -73,6 +122,26 @@ header.nav {
 	margin-bottom: 2rem;
 }
 
+ul {
+	margin-left: 0;
+}
+
+#project h1 {
+	padding-top: 7%;
+}
+
+section#work {
+	padding-top: 6%;
+	padding-bottom: 4%;
+}
+
+
+/* =============== Buttons ==============*/
+
+
+
+/* =============== Slider ==============*/
+
 .slider {
 	height: auto;
 }
@@ -82,7 +151,27 @@ header.nav {
 	padding-bottom: 7%;
 }
 
-/* TESTING FOR HERO IMAGE */
+/* =============== Header ==============*/
+
+
+
+/* =============== Footer ==============*/
+
+footer {
+	height: 160px;
+}
+
+/* ====================== 5 Media =======================*/
+
+
+
+/* =============== 5.1 Sprites ==============*/
+
+
+
+/* =============== 5.2 Background Images ===============*/
+
+/* HERO IMAGE */
 
 /* Basic background image styling. */
 .background-image {
@@ -132,63 +221,135 @@ header.nav {
 	opacity: 1;
 }
 
-section#slider h2 {
-	text-align: center;
+/* .circle {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px; 
+	background-color: black;
 }
 
-ul {
-	margin-left: 0;
+#circle-one {
+    position: absolute;
+    top: 160px;
+    left: 1040px;
+    width: 500px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
 }
 
-nav.main-nav ul:first-child li {
-	margin-right: 25px;
+#circle-two {
+    position: absolute;
+    top: 670px;
+    left: -120px;
+    width: 500px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+*/
+
+/* ====================== Utility =======================*/
+
+/* =============== Colors ==============*/
+
+#hero {
+	background-color: rgba(254,212,2,0.7);
 }
 
-#project h1 {
-	padding-top: 7%;
+#about {
+	background-color: #19D78B;
+	padding: 6% 0;
 }
 
 footer {
-	height: 160px;
+	background-color: #fed402;
+	padding-bottom: 13%;
+	padding-top: 2%;
 }
 
-section#work {
-	padding-top: 6%;
-	padding-bottom: 4%;
-}
+/* =============== Floats, Positions, Displays ==============*/
 
-/*SMALL SCREEN*/
+
+
+/* ====================== Media Queries =======================*/
+
+/* ====================== SMALL SCREEN ======================*/
 
 @media screen and (max-width: 39.9375em) {
-	
+
+	 /* ======================= Typography ======================*/
+   
 	footer{
 		text-align: center;		
-	}
-	
-	.small-gallery-small {
-		margin-bottom: 2rem;
-	}
-	
+	}   
+   
 	#contact {
 		text-align: inherit;
 	}
+   
+   	/* ======================= Structure =======================*/
 	
 	.toggle-image {
  		height: 439px;
 	}
 	
+	/* =============== Padding and Margin ==============*/
+   
+	.small-gallery-small {
+		margin-bottom: 2rem;
+	}   
+	
 	#hero-padding {
 		padding-top: 284px;
 	}
+   
+   	/* =============== Header ==============*/
+    
+
+	
+	/* =============== Footer ==============*/
+	
+	
+	
+	/* =============== Positions, Floats, Widths ==============*/
+	
+	
+	
+	/* ======================= Media =======================*/
+
+		
+	
 	}
 	
+
 	
 	
-/*MEDIUM SCREEN*/
+/* ====================== MEDIUM SCREEN ======================*/
 
 @media only screen and (min-width: 40.063em) { 
 
-/* HOVER STATES FOR CONTENT */
+ 	/* ======================= Typography ======================*/
+   
+   
+   	/* ======================= Structure =======================*/
+   
+   	/* =============== Header ==============*/
+    
+
+	
+	/* =============== Footer ==============*/
+	
+	
+	
+	/* =============== Positions, Floats, Widths ==============*/
+	
+	
+	
+	/* ======================= Media =======================*/
+	
+
+	/* HOVER STATES FOR CONTENT */
 
 	.hoverParent {
 	  position: relative;
