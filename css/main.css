@@ -217,15 +217,20 @@ li.instagram {
 	background: url(../img/sprite-instagram.png) no-repeat;
 }
 
-dli.sprite {
+/*li.sprite {
     background-position: 0 0;
     margin: 0 26px 0 0;
 	display: inline;
-}
+}*/
 
 li.sprite, li.sprite a {
 	width: 26px;
     height: 26px;
+	margin-right: .5rem;
+}
+
+li.sprite:last-child, li.sprite a:last-child {
+	margin-right: 0;
 }
 
 li.sprite:hover {
@@ -234,6 +239,10 @@ li.sprite:hover {
 
 li.sprite a {
 	display: inline-block;
+}
+
+footer ul {
+    margin-top: 1rem;
 }
 
 
