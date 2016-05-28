@@ -118,8 +118,8 @@ footer h3 {
     font-size: 3rem;
 }
 
-.small-12.medium-5.medium-offset-3 h2 {
-	padding-top: 5%;
+#for-the-good-thumb h2 {
+	padding-top: 14%;
 }
 
 #project-thumb-1 h2 {
@@ -159,6 +159,11 @@ nav a {
 	font-family: "proxima-nova-soft",sans-serif;
 	font-size: 1.2rem;
 }
+
+.nav-project-page a {
+	color: #19d7ae;
+}
+
 
 footer {
     font-weight: 500;
@@ -267,6 +272,13 @@ footer {
 	height: 160px;
 }
 
+footer img, footer p {
+	display: inline-block;
+}
+
+footer div.medium-6 a {
+	display: block;
+}
 /* ====================== 5 Media =======================*/
 
 
@@ -285,6 +297,18 @@ li.instagram {
 	background: url(../img/sprite-instagram.png) no-repeat;
 }
 
+.nav-project-page li.facebook {
+	background: url(../img/sprite-green-facebook.png) no-repeat;
+}
+
+.nav-project-page li.twitter {
+	background: url(../img/sprite-green-twitter.png) no-repeat;
+}
+
+.nav-project-page li.instagram {
+	background: url(../img/sprite-green-instagram.png) no-repeat;
+}
+
 /*li.sprite {
     background-position: 0 0;
     margin: 0 26px 0 0;
@@ -292,8 +316,8 @@ li.instagram {
 }*/
 
 li.sprite, li.sprite a {
-	width: 26px;
-    height: 26px;
+	width: 32px;
+    height: 32px;
 	margin-right: .5rem;
 }
 
@@ -302,7 +326,7 @@ li.sprite:last-child, li.sprite a:last-child {
 }
 
 li.sprite:hover {
-    background-position: 0 -26px;
+    background-position: 0 -32px;
 }
 
 li.sprite a {
