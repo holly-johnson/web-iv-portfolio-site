@@ -1,0 +1,442 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ========= TOC ============*/   
+ 
+ /*
+--------------------------------1 Typography
+--------------------------------------1.1 Body
+--------------------------------------1.2 Headings
+--------------------------------------1.3 Buttons
+--------------------------------------1.4 Forms
+--------------------------------2 Navigation Menu
+--------------------------------------2.1 Main
+--------------------------------4 Structure
+--------------------------------------4.1 Site Padding and Margin
+--------------------------------------4.2 Site Buttons
+--------------------------------------4.3 Site Form
+--------------------------------------4.4 Site Header
+--------------------------------------4.5 Site Footer
+--------------------------------5 Media
+--------------------------------------5.1 Sprites
+--------------------------------------5.2 Background Images
+--------------------------------6 Utility
+--------------------------------------6.1 Colors
+--------------------------------------6.2 Floats, Positions, Displays
+--------------------------------7 Media Queries
+--------------------------------------4.1 Typography
+--------------------------------------4.2 Structure
+------------------------------------------4.2.1 Header
+------------------------------------------4.2.2 Footer
+------------------------------------------4.2.3 Positions, Floats, Widths
+--------------------------------------5.1 Media
+
+
+*/
+
+
+/* ====================== 1 Typography =======================*/
+
+html {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+
+p, address, h1, h2, h3, h4, header a, footer a, label, #contact a, #contact form input, #contact form textarea {
+	color: white;
+}
+
+/* =============== 1.1 Body ==============*/
+
+address {
+	font-style: normal;
+}
+
+p, label {
+	font-size: 1.05rem;
+}
+
+/* =============== 1.2 Headings ==============*/
+
+h1, h2, h3, h4, a, label, .button[type="submit"] {
+	text-transform: uppercase;
+}
+
+h1, h2, h3, h4, a, label, .button[type="submit"] {
+	font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    margin: 170px 0 15px 0;
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+
+h1, footer {
+	text-align: center;
+}
+
+h1, h2, h3, h4, .button, footer h3 {
+	color: #c6d92f;
+}
+
+/* =============== 1.3 Buttons ==============*/
+
+.button {
+	border: 2px solid #c6d92f;
+}
+
+.button, .button:hover, #contact form input, #contact form textarea {
+	background-color: transparent;
+}
+
+.button:hover {
+	border: 2px solid #ef3314;
+}
+
+a:hover, .button:hover, #contact a:hover {
+	color: #ef3314;
+}
+
+#contact a {
+	text-transform: none;
+	font-family: 'Lato', sans-serif;
+}
+
+.button[type="submit"] {
+	padding-left: 20px;
+}
+
+a {
+	cursor: pointer;
+}
+
+/* =============== 1.4 Forms ==============*/
+
+form {
+    padding: 50px 0 60px;
+}
+
+form button.button[type="submit"] {
+	padding: 10px 40px;
+}
+
+form input[type="email"]:focus, form input[type="text"]:focus, form textarea:focus {
+	box-shadow: none;
+}
+
+/* ====================== Navigation =======================*/
+
+/* =============== Main ==============*/
+
+nav ul, .rule {
+	float: right;
+}
+
+/* ====================== Structure =======================*/
+
+/* =============== Padding and Margin ==============*/
+
+
+.column, .columns {
+	padding: 0;
+}
+
+.max-width {
+	max-width: 100%;
+}
+
+.bg-dark-gray .float-right {
+	padding-right: 20px;
+}
+
+.bg-dark-gray .float-left {
+	padding-left: 20px;
+}
+
+#services, #contact, #about {
+	padding: 60px 0;
+}
+
+#services .row {
+    padding-bottom: 50px;
+}
+
+#services .row:last-child {
+    padding-bottom: 0px;
+}
+
+#contact address {
+	padding-bottom: 50px;
+}
+
+.h4-contact {
+	padding-top: 50px;
+}
+
+.index-content {
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+}
+
+#services .text-right {
+	padding-right: 8px;
+}
+
+#services .medium-9.float-right {
+	padding-left: 10px;
+}
+
+section#contact {
+	padding-bottom: 0;
+}
+
+div.row.align-spaced {
+	padding-bottom: 40px;
+}
+
+/* =============== Buttons ==============*/
+
+header a.button {
+	margin-bottom: 170px;
+}
+
+/* =============== Form ==============*/
+
+#contact form input, #contact form textarea {
+	border-radius: 0;
+	border: 2px solid #c6d92f;
+}
+
+/* =============== Header ==============*/
+
+.rule {
+    border-bottom: 2px solid #c6d92f;
+}
+
+div#hero-index:first-child, #hero-contact:first-child, #hero-about:first-child, #hero-services:first-child {
+	padding-top: 20px;
+}
+
+/* =============== Footer ==============*/
+
+
+footer ul {
+	list-style: none;
+	margin: 0;
+}
+
+footer div.row {
+	padding: 30px 0 50px 0;
+}
+
+/* ====================== 5 Media =======================*/
+
+footer img, header img {
+	width: 50%;
+}
+
+#paul {
+	width: 90%;
+}
+
+/* =============== 5.1 Sprites ==============*/
+
+div.sprite {
+	background: url(../img/sprite-facebook.png) no-repeat;
+}
+
+div.sprite {
+    background-position: 0 0;
+    margin: 0 20px 0 0;
+}
+
+div.sprite, div.sprite a {
+	width: 50px;
+    height: 50px;
+}
+
+div.sprite:hover {
+    background-position: 0 -50px;
+}
+
+div.sprite a {
+	display: inline-block;
+}
+
+footer div.small-2 {
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/* =============== 5.2 Background Images ===============*/
+
+
+#hero-index {
+	background: url(../img/hero.jpg) no-repeat center center; 
+}
+
+#hero-contact {
+	background: url(../img/contact.jpg) no-repeat center center;
+}
+
+#hero-about {
+	background: url(../img/about.jpg) no-repeat center center;
+}
+
+#hero-services {
+	background: url(../img/services.jpg) no-repeat center center;
+}
+
+#hero-index, #hero-contact, #hero-about, #hero-services {
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	position: relative;
+}
+
+#contact .row:last-child {
+	max-width: 100%;
+}
+
+#map {
+	width: 100%;
+	height: 300px;
+}
+
+/* ====================== Utility =======================*/
+
+/* =============== Colors ==============*/
+
+.bg-medium-gray {
+	background-color: #2A2A2A;
+}
+
+.bg-dark-gray {
+	background-color: #1E1E1E;
+}
+
+.bg-light-gray {
+	background-color: #333;
+}
+
+.bg-green {
+	background-color: #c6d92f;
+	height: 10px;
+}
+
+/* =============== Floats, Positions, Displays ==============*/
+
+#wrapper { 
+	position: relative; 
+}
+
+/* ====================== Media Queries =======================*/
+
+
+@media only screen and (max-width: 638px) {
+   
+   /* ======================= Typography ======================*/
+   
+   	h1 {
+		font-size: 2.5rem;
+	}
+	
+	h2 {
+		font-size: 2rem;
+	}
+	
+	h3 {
+    	font-size: 1.75rem;
+	}
+	
+	p {
+    	font-size: 1.15rem;	
+	}
+	
+	#contact .align-spaced .medium-5.columns:first-child, .bg-dark-gray .text-right, .bg-dark-gray .float-right, .bg-dark-gray .float-left, #about div.row {
+		text-align: center;
+	}
+		
+	
+	
+   
+   	/* ======================= Structure =======================*/
+   
+   	/* =============== Header ==============*/
+    
+	h1 {
+		margin-top: 100px;
+	}
+	
+	header .row {
+    	padding: 0 15px;
+	}
+	
+	header img {
+		width: 100%;
+	}
+	
+	/* =============== Footer ==============*/
+	
+	footer div.columns {
+		padding-bottom: 40px;
+	}
+	
+	footer div.columns:last-child {
+		padding-bottom: 0;
+	}
+	
+	footer li {
+		padding-bottom: 5px;
+	}
+	
+	/* =============== Positions, Floats, Widths ==============*/
+	
+	#services .float-right, .float-left {
+        float: none!important;
+    }
+	
+	.bg-dark-gray .text-right, .bg-dark-gray .float-right, .bg-dark-gray .float-left {
+		padding: 0 20px;
+	}
+	
+	.button {
+		width: 100%;
+	}
+	
+	.align-spaced, #small-width {
+		width: 90%;
+	}
+	
+	section.bg-dark-gray, section.bg-medium-gray {
+    	padding: 60px 20px;
+	}
+
+	section#services div.row img {
+		padding: 40px 0 20px;
+	}
+	
+	#contact header:first-child h4 {
+   	 	padding: 0;
+	}
+
+	#services .row {
+		padding-bottom: 0px;
+	}
+	
+	#about div.medium-6:last-child {
+		padding-top: 40px;
+	}
+	
+	/* ======================= Media =======================*/
+	
+	#contact div.sprite {
+		margin: 12px auto 50px auto;
+	}
+	
+	div.sprite {
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/main.css"> 
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(45.525569, -122.676334),
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<title>Twin Finch</title>
+</head>
+
+<body>
+
+
+<!-- TOC OF CONTENT 
+
+====================1. Hero & Nav
+====================2. Roasts
+========================================2.1. Featured Roasts
+========================================2.2. Coffee Review Callout
+========================================2.3. Other Roasts
+========================================2.4. Featured Article
+====================3. How It's Done/About Us
+====================4. Map
+====================5. Footer
+
+-->
+<!-- ===============HERO & NAV=============== -->	
+ 
+ <header id="hero">
+ 	<div class="wrapper">
+    	<div class="row">
+        	<figure class="col-2-5">
+            	<img src="img/logo.png" alt="Twin Finch">
+            </figure>
+            <nav class="col-3-5" id="nav-right">
+            	<ul>
+                	<li><a href="#hero">Home</a></li>
+                    <li><a href="#roasts">Roasts</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-2-3 center-block">
+        	<h1>Twin Finch Roastery is an authentic micro­roastery; small, dedicated, and highly focused on quality.</h1>
+            <div class="rule"></div>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+ </header>
+
+<!-- ===============FEATURED ROASTS=============== -->	
+	
+<section id="roasts">
+	<div class="wrapper">
+    	<header>
+        	<h2>Roasts</h2>
+            <div class="rule"></div>
+            <p class="col-3-5 center-block">We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe­quality cup at home.</p>
+        </header>
+        <div class="row">
+            <section class="col-1-2">
+            	<div class="row" id="product-callout-row">
+                	<div class="col-1" id="product-callout">
+            	<img src="img/house-blend.jpg" alt="House blend">
+                 <p>Rated a 98 by coffeereview.com!</p>
+                 	</div>
+                </div>
+                <header>
+                    <h3>Finch House Blend</h3>
+                    <p class="roast">Medium</p>
+                </header>
+                <p id="house-blend">Hint of citrus,  complemented by flavors of dark chocolate, peanut and light pepper notes.</p>
+                <p class="country">Cajamarca &amp; Moyobamba Regions, Peru</p>
+                <p class="price">1lb $17.95</p>
+                <div class="rule"></div>
+                <a class="btn" href="#">Buy Now</a>
+            </section>
+            <section class="col-1-2">
+                <img src="img/house-blend.jpg" alt="Evening Oak">
+                <header>
+                    <h3>Evening Oak</h3>
+                    <p class="roast">Medium-Dark</p> 
+                </header>
+                <p>Our featured roast of the season. Pungently rich and complex with hints of night­blooming flowers and coriander in aroma and cup.</p>
+                <p class="country">Eastern Java, Indonesia</p>
+                <p class="price">1lb $19.95</p>
+	            <div class="rule"></div>            
+                <a class="btn" href="#">Buy Now</a>
+            </section>
+    	</div>
+    </div>
+
+<!-- ===============COFFEE REVIEW CALLOUT=============== -->		
+	
+    <div class="call-out">
+        <div class="wrapper">
+            <blockquote>“This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.” ­ Coffee Review</blockquote>
+        </div>
+    </div>    
+    
+<!-- ===============OTHER ROASTS=============== -->	
+
+    <div class="wrapper" id="other">
+        <div class="row">
+            <section class="col-1-3 center-text">
+                <img src="img/espresso.jpg" alt="Sunrise">
+                <header>
+                    <h3>Sunrise</h3>
+                    <p class="roast">Light</p>
+                </header>
+                <p>Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
+                <p class="country">La Chiapas, Mexico</p>
+                <p class="price">1lb $17.95</p>
+	            <div class="rule"></div>
+                <a class="btn" href="#">Buy Now</a>
+            </section>
+            <section class="col-1-3 center-text">
+                <img src="img/espresso.jpg" alt="Midnight">
+                <header>
+                    <h3>Midnight</h3>
+                    <p class="roast">Dark</p>
+                </header>
+                <p>Roasted into second crack for a big, bold, and dark cup. Beans display oil.</p>
+                <p class="country">Latin America</p>
+                <p class="price">1lb $17.95</p>
+	            <div class="rule"></div>
+                <a class="btn" href="#">Buy Now</a>
+            </section>
+            <section class="col-1-3 center-text">
+                <img src="img/espresso.jpg" alt="Espresso">
+                <header id="espresso">
+                    <h3>Espresso</h3>
+                </header>
+                <p>Clean, a little roasty, sumtuous crema, unfussy, delicious.</p>
+                <p class="country">Latin America, Africa, Indonesia</p>
+                <p class="price">1lb $19.95</p>
+	            <div class="rule"></div>
+                <a class="btn" href="#">Buy Now</a>
+            </section>
+        </div>
+		<div class="col-2-3 center-block">
+            <p>Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in­store per request.</p>
+		</div>
+    </div>
+
+<!-- ===============FEATURED ARTICLE=============== -->	
+
+    <div class="call-out">
+        <div class="wrapper">
+            <blockquote>No matter how you like your coffee, check out our essential tips and techniques for making and enjoying a great cup. <a href="#">Read More Here!</a></blockquote>
+        </div>
+    </div>
+</section>
+
+<!-- ===============HOW IT'S DONE/ABOUT US=============== -->	
+
+<section id="about">
+	<div class="wrapper">
+    	<header>
+        	<h2>How It's Done</h2>
+        </header>
+        <div class="rule"></div>
+		<div class="col-2-3 center-block">
+            <p>Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.</p>
+    	</div>
+    </div>
+</section>
+
+<!-- ===============MAP=============== -->	
+
+<div id="map"></div>
+
+<!-- ===============CONNECT=============== -->	
+
+<section id="connect">
+	<div class="wrapper">
+    	<header>
+        	<h2>Connect With Us</h2>
+        </header>
+        <div class="rule"></div>
+        <div class="row">
+            <div class="col-1-2">
+                <form>
+                    <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name"/>
+                    <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email"/>
+                    <label for="message">Send us a message.</label>
+                        <textarea rows="6" cols="10" id="message" placeholder="Send us a message."></textarea>
+                    <input type="submit" value="submit" id="submit"/>
+                </form>
+            </div>
+            <div class="col-1-2">
+                <header>
+                    <h3>Find Us on Social Media</h3>
+                </header>
+                <ul>
+                    <li><a href="http://www.facebook.com" target="_blank"></a></li>
+                    <li><a href="http://www.twitter.com" target="_blank"></a></li>
+                    <li><a href="http://www.google-plus.com" target="_blank"></a></li>
+                </ul>
+            </div>
+    	</div>
+    </div>
+</section>
+
+<!-- ===============FOOTER=============== -->	
+ 
+<footer class="bg-black">
+	<div class="wrapper">
+		<div class="row">
+            <figure class="col-1-4">
+                <a href="#"><img src="img/logo.png" alt="Twin Finch"></a>
+            </figure>
+            <div class="col-1-4">
+                <h4>Contact Info</h4>
+                <address><a href="http://www.google.com/maps" target="_blank">457 NW Market Street<br>
+                Portland, OR</a></address>
+            </div>
+            <div class="col-1-4">
+                <h4>Site Map</h4>
+                <ul>
+                	<li><a href="#hero">Home</a></li>
+                    <li><a href="#roasts">Roasts</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </div>
+            <div class="col-1-4">
+                <form>
+                	<label>Sign up for our newsletter
+                    	<input type="email" name="email"/>   
+                	</label>
+                    <input type="submit" value="sign up now" id="sign-up-now"/>
+                </form>
+            </div>
+		</div>
+    </div>
+</footer>
+	
+
+</body>
+</html>
