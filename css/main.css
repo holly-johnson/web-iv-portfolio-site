@@ -63,7 +63,7 @@ footer, footer p, #about p {
 	color: white;
 }
 
-.gallery p {
+.gallery p, #about p {
 	font-size: 1.15rem;
 }
 
@@ -103,6 +103,11 @@ h1, h2, h3 {
 #slider h2 {
 	color: #19d7ae;
 	font-weight: 600;
+}
+
+.hover .demo h2 {
+	font-size: 5rem;
+	padding-top: 17%;
 }
 
 footer h3 {
@@ -151,6 +156,14 @@ footer h3 {
 
 #partee-thumb h2 {
     padding-top: 45%;
+}
+
+#campus-commerce-thumb h2 {
+	padding-top: 10%;
+}
+
+#campus-commerce-demo h2 {
+	padding-top: 20%;
 }
 
 .hover span {
@@ -448,7 +461,7 @@ footer ul {
 #svg-three {
 	width: 27%;
     float: right;
-    margin-top: -20%;
+    margin-top: -38%;
 }
 
 /* CIRCLE CSS TO DELETE 
