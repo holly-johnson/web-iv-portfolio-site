@@ -89,11 +89,15 @@ h1, h2, h3 {
 	line-height: 4.5rem;
 }
 
-#project header p {
+#project h1 span {
 	text-transform: uppercase;
     font-size: 1.15rem;
     letter-spacing: .2rem;
     font-weight: 500;
+	color: #444;
+	display: block;
+	line-height: 3rem;
+	margin-bottom: 1.5rem;
 }
 
 #project h1 {
@@ -179,7 +183,7 @@ footer h3 {
 
 .hover img{
 	display: block;
-	width:100%;
+	width: 100%;
 }
 
 a {
@@ -225,13 +229,14 @@ nav.main-nav ul:first-child li {
 	margin-right: 3rem; /* fix this on media queries */
 }
 
-#borderimg:hover { 
-    border-bottom: 10px solid transparent;
+.main-nav ul.float-left a:hover { 
+    border-bottom: 20px solid transparent;
 	border-top:0;
 	border-right:0;
 	border-left:0;
     padding: 15px;
-    border-image: url(../img/underline.svg) 30 stretch;
+	border-image: url(../img/underline.png) 30 stretch;
+	-webkit-border-image: url(../img/underline.png) 30 stretch);
 }
 
 /* FIGURE OUT THE HOVER UNDERLINE nav ul a:hover {
@@ -280,7 +285,7 @@ section#work {
 }
 
 #hero-padding h1:last-child {
-	margin-bottom: 4rem;
+	margin-bottom: 4.7rem;
 }
 
 /*#project div.row div.small-12.columns {
@@ -520,7 +525,9 @@ footer {
 
 /* ====================== Media Queries =======================*/
 
-/* ====================== SMALL SCREEN ======================*/
+	
+
+/* ====================== SMALL SCREEN 640 ======================*/
 
 @media screen and (max-width: 39.9375em) {
 
@@ -533,11 +540,52 @@ footer {
 	#contact {
 		text-align: inherit;
 	}
+	
+	#hero-padding h1 {
+		font-size: 4.5rem;
+		line-height: 4.5rem;
+	}
+	
+	h2.show-for-small-only {
+		font-size: 3rem;
+		font-family: "proxima-nova-soft",sans-serif;
+		color: #19d7ae;
+	}
+	
+	h2.show-for-small-only span {
+		display: block;
+		color: #444;
+		text-transform: uppercase;
+		font-size: 1rem;
+	}
+	
+	#project h1 {
+	    font-size: 4rem;
+		line-height: 4.3rem;
+		padding-top: 5rem;
+	}
+	
+	#slider h2 {
+		font-size: 2rem;
+	}
+	
+	#slider {
+		margin-bottom: 10%;
+	}
+	
+	#project header#young-living h1 {
+		letter-spacing: -.06rem;
+	}
    
    	/* ======================= Structure =======================*/
 	
 	.toggle-image {
  		height: 439px;
+	}
+	
+	.partee img {
+		margin: 0 auto;
+		display: block;
 	}
 	
 	/* =============== Padding and Margin ==============*/
@@ -548,8 +596,17 @@ footer {
 	}   
 	
 	#hero-padding {
-		padding-top: 284px;
+		padding-top: 4.9rem;
 	}
+	
+	nav.main-nav ul:first-child li {
+		margin-right: 2rem;
+	}
+	
+	nav.main-nav ul:first-child li:last-child {
+		margin-right: 0;
+	}
+	
    
    	/* =============== Header ==============*/
     
@@ -570,16 +627,27 @@ footer {
 	}
 	
 
+/* ====================== 966 ======================*/
 	
+@media only screen and (max-width: 966px) {
+	#hero-padding h1:last-child {
+		margin-bottom: 4rem;
+	}
+}
 	
-/* ====================== MEDIUM SCREEN ======================*/
+/* ====================== MEDIUM SCREEN 1023 ======================*/
 
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em)  { 
 
  	/* ======================= Typography ======================*/
    
    
    	/* ======================= Structure =======================*/
+   
+   #hero-padding {
+		padding-top: 15.15rem;
+	}
+
    
    	/* =============== Header ==============*/
     
