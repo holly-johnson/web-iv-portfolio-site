@@ -52,10 +52,10 @@ html, body {
 }
 
 p {
-	color: #444;
+	color: #555;
 }
 
-footer, footer p {
+footer, footer p, #about p {
 	color: white;
 }
 
@@ -63,7 +63,9 @@ footer, footer p {
 	color: white;
 }
 
-
+.gallery p {
+	font-size: 1.15rem;
+}
 
 /* =============== 1.2 Headings ==============*/
 
@@ -75,10 +77,23 @@ h1, h2, h3 {
 	font-family: "proxima-nova-soft",sans-serif;
 }
 
-#hero h1, #project h1 {
+#hero h1 {
     font-weight: 600;
     font-size: 5rem;
 	line-height: 5.5rem;
+}
+
+#project h1 {
+	font-weight: 600;
+    font-size: 4.5rem;
+	line-height: 4.5rem;
+}
+
+#project header p {
+	text-transform: uppercase;
+    font-size: 1.15rem;
+    letter-spacing: .2rem;
+    font-weight: 500;
 }
 
 #project h1 {
@@ -123,7 +138,7 @@ footer h3 {
 }
 
 #twin-finch-thumb h2 {
-	padding-top: 11%;
+	padding-top: 10%;
 }
 
 #young-living-thumb h2 {
@@ -227,7 +242,7 @@ nav.main-nav ul:first-child li {
 /* =============== Padding and Margin ==============*/
 
 #hero-padding {
-	padding-top: 16rem; /* remove? */
+	padding-top: 15.9rem; /* remove? */
 }
 
 header.nav {
@@ -255,8 +270,29 @@ section#work {
 	margin-bottom: 4rem;
 }
 
+/*#project div.row div.small-12.columns {
+    padding: 0;
+}*/
+
+
 /* =============== Buttons ==============*/
 
+.demo-button {
+	background: url(../img/button.png) no-repeat;
+}
+
+.demo-button, .demo-button a {
+	width: 150px;
+    height: 50px;
+}
+
+.demo-button a {
+	display: inline-block;
+}
+
+.demo-button:hover {
+    background-position: 0 -50px;
+}
 
 
 /* =============== Slider ==============*/
@@ -381,7 +417,7 @@ footer ul {
 }
 
 .third-image {
-	background-image: url('http://s169923.gridserver.com/images/catalinaharbor.jpg');
+	background-image: url(../img/background-youngliving.jpg);
 	z-index: -1;
 	opacity: 0;
 }
@@ -451,7 +487,7 @@ footer ul {
 /* =============== Colors ==============*/
 
 #hero {
-	background-color: rgba(254,212,2,0.7);
+	background-color: rgba(254,212,2,0.9);
 }
 
 #about {
@@ -493,6 +529,7 @@ footer {
 	
 	/* =============== Padding and Margin ==============*/
    
+	
 	.small-gallery-small {
 		margin-bottom: 2rem;
 	}   
