@@ -533,9 +533,13 @@ footer {
 
 	 /* ======================= Typography ======================*/
    
-	footer{
+	/*footer{
 		text-align: center;		
-	}   
+	}   */
+   
+   footer div.medium-6 p {
+		font-size: .75rem;
+	}
    
 	#contact {
 		text-align: inherit;
@@ -550,6 +554,8 @@ footer {
 		font-size: 3rem;
 		font-family: "proxima-nova-soft",sans-serif;
 		color: #19d7ae;
+		padding-top: 1rem;
+		line-height: 3.25rem;
 	}
 	
 	h2.show-for-small-only span {
@@ -557,6 +563,8 @@ footer {
 		color: #444;
 		text-transform: uppercase;
 		font-size: 1rem;
+		line-height: 1.8rem;
+		padding-bottom: .5rem;
 	}
 	
 	#project h1 {
@@ -576,6 +584,16 @@ footer {
 	#project header#young-living h1 {
 		letter-spacing: -.06rem;
 	}
+	
+	footer h3 {
+		font-size: 1.6rem;
+		line-height: 1.9rem;
+	}
+	
+	#about h2 {
+		font-size: 3rem;
+    	font-weight: 500;
+	}
    
    	/* ======================= Structure =======================*/
 	
@@ -587,6 +605,7 @@ footer {
 		margin: 0 auto;
 		display: block;
 	}
+
 	
 	/* =============== Padding and Margin ==============*/
    
@@ -614,7 +633,13 @@ footer {
 	
 	/* =============== Footer ==============*/
 	
-	
+	footer {
+		padding-bottom: 15%;
+		padding-top: 5%;
+	}
+	footer div.medium-6 > img {
+		width: 10%;
+	}
 	
 	/* =============== Positions, Floats, Widths ==============*/
 	
@@ -641,6 +666,7 @@ footer {
 
  	/* ======================= Typography ======================*/
    
+   	
    
    	/* ======================= Structure =======================*/
    
@@ -654,7 +680,6 @@ footer {
 
 	
 	/* =============== Footer ==============*/
-	
 	
 	
 	/* =============== Positions, Floats, Widths ==============*/
