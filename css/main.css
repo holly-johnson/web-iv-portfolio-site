@@ -8,7 +8,6 @@
 --------------------------------------1.1 Body
 --------------------------------------1.2 Headings
 --------------------------------------1.3 Buttons
---------------------------------------1.4 Forms
 --------------------------------2 Navigation Menu
 --------------------------------------2.1 Main
 --------------------------------4 Structure
@@ -41,15 +40,12 @@ html, body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-/* =============== 1.1 Body ==============*/
-
-#contact {
+#contact, nav ul, section#slider h2 {
 	text-align: right;
 }
 
-#about {
-	color: white;
-}
+/* =============== 1.1 Body ==============*/
+
 
 p {
 	color: #555;
@@ -57,15 +53,11 @@ p {
 	line-height: 1.9rem;
 }
 
-footer, footer p, #about p {
+#hero, #about, footer, footer p, #about p, a, a:hover, {
 	color: white;
 }
 
-#hero {
-	color: white;
-}
-
-#about p {
+#about p, #project h1 span {
 	font-size: 1.15rem;
 }
 
@@ -75,29 +67,26 @@ footer, footer p, #about p {
 
 /* =============== 1.2 Headings ==============*/
 
-section#slider h2 {
-	text-align: center;
-}
-
-h1, h2, h3 {
+h1, h2, h3, .hover h2 {
 	font-family: "proxima-nova-soft",sans-serif;
 }
 
+#project h1, #slider h2, #hero h1, a {
+	font-weight: 600;
+}
+
 #hero h1 {
-    font-weight: 600;
     font-size: 5rem;
 	line-height: 5.5rem;
 }
 
 #project h1 {
-	font-weight: 600;
     font-size: 4.5rem;
 	line-height: 4.5rem;
 }
 
 #project h1 span {
 	text-transform: uppercase;
-    font-size: 1.15rem;
     letter-spacing: .2rem;
     font-weight: 500;
 	color: #666;
@@ -106,13 +95,8 @@ h1, h2, h3 {
 	margin-bottom: 1.5rem;
 }
 
-#project h1 {
+#project h1, #slider h2, footer a:hover {
 	color: #19d7ae;
-}
-
-#slider h2 {
-	color: #19d7ae;
-	font-weight: 600;
 }
 
 .hover .demo h2 {
@@ -128,7 +112,7 @@ footer h3 {
 /* =============== 1.3 Buttons ==============*/
 
 .hover div {
-	position:relative;
+	position: relative;
 }
 
 .hover h2 {
@@ -143,7 +127,6 @@ footer h3 {
 	color:white;
 	padding-top: 12%;
 	margin:0;
-	font-family: "proxima-nova-soft",sans-serif;
 	font-weight: 500;
     font-size: 3rem;
 }
@@ -176,30 +159,18 @@ footer h3 {
 	padding-top: 20%;
 }
 
-a {
-	color: white;
-	font-weight: 600;
-}
-
-a:hover {
-	color: white;
-}
-
-footer a:hover {
-	color: #19d7ae;
-}
-
 nav a {
 	font-family: "proxima-nova-soft",sans-serif;
 	font-size: 1.2rem;
 }
 
-footer {
+footer, h2 {
     font-weight: 500;
 }
 
-/* =============== 1.4 Forms ==============*/
-
+h2 {
+	font-size: 3.5rem;
+}
 
 
 /* ====================== Navigation =======================*/
@@ -208,10 +179,6 @@ footer {
 
 ul li {
 	display: inline-block;
-}
-
-nav ul {
-	text-align: right;
 }
 
 nav.main-nav ul:first-child li {
@@ -271,31 +238,33 @@ p {
 	margin-bottom: 2rem;
 }
 
-/*#project div.row div.small-12.columns {
-    padding: 0;
-}*/
+.medium-push-7 {
+    padding-left: 5rem;
+}
+
+#about h2 {
+	margin-bottom: 0;
+}
 
 
 /* =============== Buttons ==============*/
 
 .demo-button {
-	background: url(../img/button.png) no-repeat;
-	margin-left: .75rem;
-}
-
-.demo-button, .demo-button a {
-	width: 150px;
-    height: 50px;
+	background-color: #19d7ae;
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .00rem;
+    margin-bottom: 4rem;
+	margin-top: 3rem;
 }
 
 .demo-button a {
-	display: inline-block;
+	font-weight: 700;
 }
-
-.demo-button:hover {
-    background-position: 0 -50px;
-}
-
 
 /* =============== Slider ==============*/
 
@@ -450,39 +419,19 @@ footer ul {
 #svg-three {
 	width: 27%;
     float: right;
-    margin-top: -38%;
+    margin-top: -45%;
 }
 
-/* CIRCLE CSS TO DELETE 
-
-.circle {
-	border-radius: 50%;
-	width: 200px;
-	height: 200px; 
-	background-color: black;
+.about-img {
+	position: relative;
+    border-radius: 50%;
+    width: 90%;
+    height: auto;
+    padding-top: 90%;
+    background-color: orange;
+    /* background: url(https://lh3.googleusercontent.com/-6psYQKeBTVU/VCxVNQ4CLOI/AAAAAAAAACQ/o8Kp40F7vMApyvoH9loCouijDT4s41R3wCKgB/w140-h140-p/Erickson_Holly.jpg) no-repeat; */
+    border: 7px solid white;
 }
-
-#circle-one {
-	position: absolute;
-    top: 160px;
-    left: 1040px;
-    width: 500px;
-    height: 500px;
-    background: rgba(25, 183, 141, 0.5);
-	z-index: 20;
-	background: rgba(25, 183, 141, 0.5) 50% 0 scroll repeat-y
-}
-
-#circle-two {
-    position: absolute;
-    top: 670px;
-    left: -120px;
-    width: 500px;
-    height: 500px;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 20;
-}*/
-
 
 /* ====================== Utility =======================*/
 
@@ -522,16 +471,8 @@ footer {
 
 	 /* ======================= Typography ======================*/
    
-	/*footer{
-		text-align: center;		
-	}   */
-   
    footer div.medium-6 p {
 		font-size: .75rem;
-	}
-   
-	#contact {
-		text-align: inherit;
 	}
 	
 	#hero-padding h1 {
@@ -580,6 +521,11 @@ footer {
     	font-weight: 500;
 	}
    
+    .gallery p {
+		font-size: 1.1rem;
+		line-height: 2.1rem;
+	}
+   
    	/* ======================= Structure =======================*/
 
 	
@@ -601,7 +547,7 @@ footer {
 	}   
 	
 	#hero-padding {
-		padding-top: 4.9rem;
+		padding-top: 6rem;
 	}
 	
 	nav.main-nav ul:first-child li {
@@ -612,6 +558,23 @@ footer {
 		margin-right: 0;
 	}
 	
+	#work div.hover {
+		margin-bottom: 2rem;
+	}
+	
+	#slider {
+		padding-top: 10%;
+		padding-bottom: 25%;
+	}
+	
+	.medium-push-7 {
+		padding-left: 7rem;
+		margin-bottom: 2rem;
+	}
+	
+	.nav-project-page .nav {
+		padding-bottom: 1rem;
+	}
    
    	/* =============== Header ==============*/
     
@@ -620,7 +583,7 @@ footer {
 	/* =============== Footer ==============*/
 	
 	footer {
-		padding-bottom: 15%;
+		padding-bottom: 45%;
 		padding-top: 5%;
 	}
 	footer div.medium-6 > img {
@@ -638,13 +601,22 @@ footer {
 	}
 	
 
+
+
+
 /* ====================== 966 ======================*/
 	
 @media only screen and (max-width: 966px) {
 	#hero-padding h1:last-child {
 		margin-bottom: 4rem;
 	}
+	
+	#twin-finch-thumb h2 {
+		padding-top: 5%;
+	}
 }
+	
+	
 	
 /* ====================== MEDIUM SCREEN 1023 ======================*/
 
@@ -652,7 +624,9 @@ footer {
 
  	/* ======================= Typography ======================*/
    
-   	
+   	/*h2.hide-for-small-only {
+		font-size: 2.5rem;
+	}*/
    
    	/* ======================= Structure =======================*/
    
@@ -670,7 +644,9 @@ footer {
 	
 	/* =============== Positions, Floats, Widths ==============*/
 	
-	
+	.medium-push-7 {
+		padding-left: 2rem;
+	}
 	
 	/* ======================= Media =======================*/
 	
@@ -715,5 +691,4 @@ footer {
 		justify-content: center;
 	}
 
-
-}	
+}
