@@ -213,7 +213,7 @@ header.nav {
 	padding-top: .3rem;
 }
 
-.nav-project-page nav ul.float-left {
+.nav-project-page nav ul.float-left, #hero nav.main-nav ul.float-left {
 	padding-top: .3rem;
 }
 
