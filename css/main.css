@@ -53,6 +53,8 @@ html, body {
 
 p {
 	color: #555;
+	font-weight: 300;
+	line-height: 1.9rem;
 }
 
 footer, footer p, #about p {
@@ -94,7 +96,7 @@ h1, h2, h3 {
     font-size: 1.15rem;
     letter-spacing: .2rem;
     font-weight: 500;
-	color: #444;
+	color: #666;
 	display: block;
 	line-height: 3rem;
 	margin-bottom: 1.5rem;
@@ -129,7 +131,7 @@ footer h3 {
 	display: none;  
 	height:100%;
 	width:100%;
-	background-color: rgba(254,212,2,0.9);
+	background-color: rgba(254,212,0,0.7);
 	position:absolute;
 	top:0;
 	left:0;
@@ -192,6 +194,10 @@ a {
 }
 
 a:hover {
+	color: white;
+}
+
+footer a:hover {
 	color: #19d7ae;
 }
 
@@ -199,11 +205,6 @@ nav a {
 	font-family: "proxima-nova-soft",sans-serif;
 	font-size: 1.2rem;
 }
-
-.nav-project-page a {
-	color: #19d7ae;
-}
-
 
 footer {
     font-weight: 500;
@@ -230,25 +231,11 @@ nav.main-nav ul:first-child li {
 }
 
 .main-nav ul.float-left a:hover { 
-    border-bottom: 20px solid transparent;
-	border-top:0;
-	border-right:0;
-	border-left:0;
-    padding: 15px;
-	border-image: url(../img/underline.png) 30 stretch;
-	-webkit-border-image: url(../img/underline.png) 30 stretch);
+	border: 0;
+    border-bottom: 5px solid #19d7ae;
+	line-height: 0rem;
 }
 
-/* FIGURE OUT THE HOVER UNDERLINE nav ul a:hover {
-	border-bottom: 4px solid #19d7ae;
-	padding-bottom: .1rem;
-	border-bottom-left-radius: 2rem;
-	background: transparent;
-  	border-radius: 10px;
-  	height: 10px;
-  	width: 255px;
-  	box-shadow: 0 55px 0 0 #19d7ae;
-}*/
 
 
 /* ====================== Structure =======================*/
@@ -269,6 +256,10 @@ header.nav {
 
 .gallery, .small-gallery {
 	margin-bottom: 2rem;
+}
+
+section#work > img > div.row.gallery {
+	margin-bottom: .5rem;
 }
 
 ul {
@@ -320,8 +311,8 @@ section#work {
 }
 
 #slider {
-	padding-top: 3%;
-	padding-bottom: 7%;
+	padding-top: 7%;
+	padding-bottom: 10%;
 }
 
 /* =============== Header ==============*/
@@ -359,7 +350,7 @@ li.instagram {
 	background: url(../img/sprite-instagram.png) no-repeat;
 }
 
-.nav-project-page li.facebook {
+/*.nav-project-page li.facebook {
 	background: url(../img/sprite-green-facebook.png) no-repeat;
 }
 
@@ -369,7 +360,7 @@ li.instagram {
 
 .nav-project-page li.instagram {
 	background: url(../img/sprite-green-instagram.png) no-repeat;
-}
+}*/
 
 /*li.sprite {
     background-position: 0 0;
@@ -505,7 +496,12 @@ footer ul {
 /* =============== Colors ==============*/
 
 #hero {
-	background-color: rgba(254,212,2,0.9);
+	background-color: rgba(254,212,0,0.7);
+	height: 588px;
+}
+
+.nav-project-page {
+	background-color: rgba(254,212,0,0.7);
 }
 
 #about {
@@ -514,7 +510,7 @@ footer ul {
 }
 
 footer {
-	background-color: #fed402;
+	background-color: rgba(254,212,2,0.8);;
 	padding-bottom: 13%;
 	padding-top: 2%;
 }
@@ -560,7 +556,7 @@ footer {
 	
 	h2.show-for-small-only span {
 		display: block;
-		color: #444;
+		color: #666;
 		text-transform: uppercase;
 		font-size: 1rem;
 		line-height: 1.8rem;
@@ -575,10 +571,6 @@ footer {
 	
 	#slider h2 {
 		font-size: 2rem;
-	}
-	
-	#slider {
-		margin-bottom: 10%;
 	}
 	
 	#project header#young-living h1 {
@@ -596,8 +588,9 @@ footer {
 	}
    
    	/* ======================= Structure =======================*/
+
 	
-	.toggle-image {
+	#hero, .toggle-image {
  		height: 439px;
 	}
 	
@@ -701,7 +694,7 @@ footer {
 	}
 	
 	.hoverParent:hover .hoverContent {
-	  	background-color: rgba(254,212,2,0.9);
+	  	background-color: rgba(254,212,2,0.7);
 	  	text-align: center;
 	  	color: white;
 	  	width: 100%;
