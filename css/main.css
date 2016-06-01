@@ -65,8 +65,12 @@ footer, footer p, #about p {
 	color: white;
 }
 
-.gallery p, #about p {
+#about p {
 	font-size: 1.15rem;
+}
+
+.gallery p {
+	font-size: 1.1rem;
 }
 
 /* =============== 1.2 Headings ==============*/
