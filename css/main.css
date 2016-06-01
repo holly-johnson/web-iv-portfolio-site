@@ -172,22 +172,6 @@ footer h3 {
 	padding-top: 20%;
 }
 
-.hover span {
-	display: block;
-	font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-}
-
-.hover div:hover > h2 {
-	display:block;
-}
-
-.hover img{
-	display: block;
-	width: 100%;
-}
-
 a {
 	color: white;
 	font-weight: 600;
@@ -258,7 +242,7 @@ header.nav {
 	margin-bottom: 2rem;
 }
 
-section#work > img > div.row.gallery {
+section#work div.gallery:nth-child(2) {
 	margin-bottom: .5rem;
 }
 
@@ -279,6 +263,10 @@ section#work {
 	margin-bottom: 4.7rem;
 }
 
+p {
+	margin-bottom: 2rem;
+}
+
 /*#project div.row div.small-12.columns {
     padding: 0;
 }*/
@@ -288,6 +276,7 @@ section#work {
 
 .demo-button {
 	background: url(../img/button.png) no-repeat;
+	margin-left: .75rem;
 }
 
 .demo-button, .demo-button a {
@@ -681,6 +670,21 @@ footer {
 	
 	/* ======================= Media =======================*/
 	
+	.hover span {
+	display: block;
+	font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+	}
+	
+	.hover div:hover > h2 {
+		display:block;
+	}
+	
+	.hover img{
+		display: block;
+		width: 100%;
+	}
 
 	/* HOVER STATES FOR CONTENT */
 
@@ -694,7 +698,7 @@ footer {
 	}
 	
 	.hoverParent:hover .hoverContent {
-	  	background-color: rgba(254,212,2,0.7);
+	  	background-color: rgba(254,212,2,0.85);
 	  	text-align: center;
 	  	color: white;
 	  	width: 100%;
