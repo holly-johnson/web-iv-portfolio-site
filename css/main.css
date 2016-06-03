@@ -46,7 +46,6 @@ html, body {
 
 /* =============== 1.1 Body ==============*/
 
-
 p {
 	color: #555;
 	font-weight: 300;
@@ -80,6 +79,10 @@ h1, h2, h3, .hover h2 {
 	line-height: 5.5rem;
 }
 
+#hero h1 span {
+	display: block;
+}
+
 #project h1 {
     font-size: 4.5rem;
 	line-height: 4.5rem;
@@ -91,7 +94,7 @@ h1, h2, h3, .hover h2 {
     font-weight: 500;
 	color: #666;
 	display: block;
-	line-height: 3rem;
+	line-height: 2.25rem;
 	margin-bottom: 1.5rem;
 }
 
@@ -289,10 +292,6 @@ p {
 
 /* =============== Footer ==============*/
 
-footer {
-	height: 160px;
-}
-
 footer img, footer p {
 	display: inline-block;
 }
@@ -337,6 +336,7 @@ li.sprite a {
 
 footer ul {
     margin-top: 1rem;
+	margin-bottom: 0;
 }
 
 
@@ -412,9 +412,9 @@ footer ul {
 .about-img {
 	position: relative;
     border-radius: 50%;
-    width: 90%;
+    width: 100%;
     height: auto;
-    padding-top: 90%;
+    padding-top: 100%;
     background-color: orange;
     /* background: url(https://lh3.googleusercontent.com/-6psYQKeBTVU/VCxVNQ4CLOI/AAAAAAAAACQ/o8Kp40F7vMApyvoH9loCouijDT4s41R3wCKgB/w140-h140-p/Erickson_Holly.jpg) no-repeat; */
     border: 7px solid white;
@@ -440,25 +440,49 @@ footer ul {
 
 footer {
 	background-color: rgba(254,212,2,0.8);;
-	padding: 2% 0 13% 0;
+	padding: 2% 0 6% 0;
 }
 
 /* =============== Floats, Positions, Displays ==============*/
 
 
 
-/* ====================== Media Queries =======================*/
 
-	
 
-/* ====================== SMALL SCREEN 640 ======================*/
+
+
+
+
+
+/* ====================== Media Queries (From Foundation 6 Docs) =======================*/
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium Landscape Orientation */
+@media screen and (min-width: 40em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+/* ====================== SMALL SCREEN - Small only - 640 ======================*/
 
 @media screen and (max-width: 39.9375em) {
 
 	 /* ======================= Typography ======================*/
    
-   footer div.medium-6 p {
+   footer div.small-5 p {
 		font-size: .75rem;
+		font-weight: 600;
 	}
 	
 	#hero-padding h1 {
@@ -471,7 +495,7 @@ footer {
 		font-family: "proxima-nova-soft",sans-serif;
 		color: #4abfa4;
 		padding-top: 1rem;
-		line-height: 3.25rem;
+		line-height: 3rem;
 	}
 	
 	h2.show-for-small-only span {
@@ -479,14 +503,19 @@ footer {
 		color: #666;
 		text-transform: uppercase;
 		font-size: 1rem;
-		line-height: 1.8rem;
+		line-height: 1.3rem;
 		padding-bottom: .5rem;
 	}
 	
 	#project h1 {
-	    font-size: 4rem;
-		line-height: 4.3rem;
+	    font-size: 3.25rem;
+		line-height: 3.2rem;
 		padding-top: 5rem;
+	}
+	
+	#project h1 span {
+		line-height: 2.5rem;
+		font-size: 1rem;
 	}
 	
 	#slider h2 {
@@ -511,12 +540,16 @@ footer {
 		font-size: 1.1rem;
 		line-height: 2.1rem;
 	}
+	
+	.demo-button a {
+		font-size: .8rem;
+	}
    
    	/* ======================= Structure =======================*/
 
 	
 	#hero, .toggle-image {
- 		height: 439px;
+ 		height: 545px;
 	}
 	
 	.partee img {
@@ -533,7 +566,7 @@ footer {
 	}   
 	
 	#hero-padding {
-		padding-top: 6rem;
+		padding-top: 8rem;
 	}
 	
 	nav.main-nav ul:first-child li {
@@ -545,7 +578,7 @@ footer {
 	}
 	
 	#work div.hover {
-		margin-bottom: 2rem;
+		margin-bottom: 3rem;
 	}
 	
 	#slider {
@@ -558,8 +591,16 @@ footer {
 		margin-bottom: 2rem;
 	}
 	
-	.nav-project-page .nav {
-		padding-bottom: 1rem;
+	#about {
+		padding: 17% 0;
+	}
+	
+	footer div.small-5 {
+		padding-right: 0;
+	}
+	
+	footer div.small-7 {
+		padding-left: 0;
 	}
    
    	/* =============== Header ==============*/
@@ -587,6 +628,25 @@ footer {
 	}
 	
 
+/* ==================== Medium Landscape Orientation ================== */
+
+@media screen and (min-width: 40em) and (orientation: landscape) {
+	nav.main-nav ul:first-child li:first-child {
+		margin-right: 2rem;
+		margin-left: 1rem;
+	}
+	
+	nav.main-nav ul li:last-child {
+		margin-right: 0;
+	}
+	
+	nav.main-nav ul.hide-for-small-only {
+		padding-right: 0;
+	}
+}
+
+
+
 /* ====================== 826 ======================*/
 	
 @media only screen and (max-width: 826px) {
@@ -613,7 +673,7 @@ footer {
 	
 /* ====================== MEDIUM SCREEN 1023 ======================*/
 
-@media only screen and (min-width: 40.063em)  { 
+@media only screen and (min-width: 40em)  { 
 
  	/* ======================= Typography ======================*/
    
