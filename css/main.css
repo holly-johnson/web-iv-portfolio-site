@@ -415,9 +415,7 @@ footer ul {
     width: 100%;
     height: auto;
     padding-top: 100%;
-/*    background-color: orange;
-*/  background: url(../img/headshot-medium.jpg) center no-repeat;
-    border: 7px solid white;
+	border: 7px solid white;
 }
 
 /* ====================== Utility =======================*/
@@ -637,7 +635,12 @@ footer {
 	
 	/* ======================= Media =======================*/
 
-		
+	.about-img {
+		background: url(../img/headshot-small.jpg) center no-repeat;
+		-webkit-background: url(../img/headshot-small.jpg) center no-repeat;
+		-moz-background: url(../img/headshot-small.jpg) center no-repeat;
+		-o-background: url(../img/headshot-small.jpg) center no-repeat;
+	}		
 	
 	}
 	
@@ -734,14 +737,21 @@ footer {
 	
 	/* ======================= Media =======================*/
 	
-	.hover span {
-	display: block;
-	font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
+	.about-img {
+		background: url(../img/headshot-medium.jpg) center no-repeat;
+		-webkit-background: url(../img/headshot-medium.jpg) center no-repeat;
+		-moz-background: url(../img/headshot-medium.jpg) center no-repeat;
+		-o-background: url(../img/headshot-medium.jpg) center no-repeat;
 	}
 	
-	.hover div:hover > h2 {
+	.hover span {
+		display: block;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		letter-spacing: .2rem;
+	}
+	
+	.hover div:hover > h2, .hover div:active > h2 {
 		display:block;
 	}
 	
@@ -750,31 +760,20 @@ footer {
 		width: 100%;
 	}
 
-	/* HOVER STATES FOR CONTENT */
 
-	.hoverParent {
-	  	position: relative;
-	  	float:left;
+}
+
+/* ====================== MEDIUM SCREEN & Landscape 1023 ======================*/
+
+@media only screen and (min-width: 40em) and (orientation: landscape) { 
+
+	.about-img {
+		background: url(../img/headshot-medium.jpg) center no-repeat;
+		-webkit-background: url(../img/headshot-medium.jpg) center no-repeat;
+		-moz-background: url(../img/headshot-medium.jpg) center no-repeat;
+		-o-background: url(../img/headshot-medium.jpg) center no-repeat;
 	}
 	
-	.hoverContent {
-	  	display: none;
-	}
-	
-	.hoverParent:hover .hoverContent {
-	  	background-color: rgba(254,212,2,0.85);
-	  	text-align: center;
-	  	color: white;
-	  	width: 100%;
-	  	height: 100%;
-	  	position: absolute;
-	  	top: 0;
-	  	left: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
 }
 
 /* ====================== Large and up ======================= */
@@ -783,5 +782,13 @@ footer {
 	#hero, .toggle-image {
  		height: 556px;
 	}
+	
+	.about-img {
+		background: url(../img/headshot-large.jpg) center no-repeat;
+		-webkit-background: url(../img/headshot-large.jpg) center no-repeat;
+		-moz-background: url(../img/headshot-large.jpg) center no-repeat;
+		-o-background: url(../img/headshot-large.jpg) center no-repeat;
+	}
+
 		
 }
