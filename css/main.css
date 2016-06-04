@@ -415,8 +415,8 @@ footer ul {
     width: 100%;
     height: auto;
     padding-top: 100%;
-    background-color: orange;
-    /* background: url(https://lh3.googleusercontent.com/-6psYQKeBTVU/VCxVNQ4CLOI/AAAAAAAAACQ/o8Kp40F7vMApyvoH9loCouijDT4s41R3wCKgB/w140-h140-p/Erickson_Holly.jpg) no-repeat; */
+/*    background-color: orange;
+*/  background: url(../img/headshot-medium.jpg) center no-repeat;
     border: 7px solid white;
 }
 
@@ -610,7 +610,7 @@ footer {
 	/* =============== Footer ==============*/
 	
 	footer {
-		padding-bottom: 45%;
+		padding-bottom: 40%;
 		padding-top: 5%;
 	}
 	footer div.medium-6 > img {
@@ -643,6 +643,19 @@ footer {
 	nav.main-nav ul.hide-for-small-only {
 		padding-right: 0;
 	}
+	
+	#hero-padding {
+		padding-top: 8rem;
+	}
+	
+	#hero-padding h1 {
+		font-size: 4.5rem;
+	}
+	
+	#hero, .toggle-image {
+ 		height: 400px;
+	}
+	
 }
 
 
@@ -744,4 +757,13 @@ footer {
 		justify-content: center;
 	}
 
+}
+
+/* ====================== Large and up ======================= */
+
+@media screen and (min-width: 64em) {
+	#hero, .toggle-image {
+ 		height: 556px;
+	}
+		
 }
