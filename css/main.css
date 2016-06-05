@@ -645,42 +645,6 @@ footer {
 	}
 	
 
-/* ==================== Medium Landscape Orientation ================== */
-
-@media screen and (min-width: 40em) and (orientation: landscape) {
-	nav.main-nav ul:first-child li:first-child {
-		margin-right: 2rem;
-		margin-left: 1rem;
-	}
-	
-	nav.main-nav ul li:last-child {
-		margin-right: 0;
-	}
-	
-	nav.main-nav ul.hide-for-small-only {
-		padding-right: 0;
-	}
-	
-	#hero-padding {
-		padding-top: 8rem;
-	}
-	
-	#hero-padding h1 {
-		font-size: 4.5rem;
-	}
-	
-	#hero, .toggle-image {
- 		height: 400px;
-	}
-	
-	#slider h2 {
-		font-size: 3rem;
-	}
-	
-}
-
-
-
 /* ====================== 826 ======================*/
 	
 @media only screen and (max-width: 826px) {
@@ -763,10 +727,43 @@ footer {
 
 }
 
-/* ====================== MEDIUM SCREEN & Landscape 1023 ======================*/
 
-@media only screen and (min-width: 40em) and (orientation: landscape) { 
+/* ==================== Medium Landscape Orientation ================== */
 
+@media screen and (min-width: 40em) and (orientation: landscape) {
+	nav.main-nav ul:first-child li:first-child {
+		margin-right: 2rem;
+		margin-left: 1rem;
+	}
+	
+	nav.main-nav ul li:last-child {
+		margin-right: 0;
+	}
+	
+	nav.main-nav ul.hide-for-small-only {
+		padding-right: 0;
+	}
+	
+	#hero-padding {
+		padding-top: 8rem;
+	}
+	
+	#hero-padding h1 {
+		font-size: 4.5rem;
+	}
+	
+	#hero, .toggle-image {
+ 		height: 400px;
+	}
+	
+	#slider h2 {
+		font-size: 3rem;
+	}
+	
+	#hero-padding {
+		padding-top: 8rem;
+	}
+	
 	.about-img {
 		background: url(../img/headshot-medium.jpg) center no-repeat;
 		-webkit-background: url(../img/headshot-medium.jpg) center no-repeat;
@@ -774,13 +771,23 @@ footer {
 		-o-background: url(../img/headshot-medium.jpg) center no-repeat;
 	}
 	
+
 }
+
+/* ====================== MEDIUM SCREEN & Landscape 1023 ======================*/
+
+
+	
 
 /* ====================== Large and up ======================= */
 
 @media screen and (min-width: 64em) {
 	#hero, .toggle-image {
  		height: 556px;
+	}
+	
+	#hero-padding {
+		padding-top: 15.15rem;
 	}
 	
 	.about-img {
