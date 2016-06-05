@@ -444,6 +444,10 @@ footer {
 	padding: 2% 0 6% 0;
 }
 
+#twin-finch img {
+    border: 1px solid #999;
+}
+
 /* =============== Floats, Positions, Displays ==============*/
 
 .partee img {
