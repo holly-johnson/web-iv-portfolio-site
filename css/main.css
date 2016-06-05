@@ -708,7 +708,7 @@ footer {
 
 /* ==================== Medium Landscape Orientation ================== */
 
-@media screen and (min-width: 40em) and (orientation: landscape) {
+@media screen and (min-width: 40em) and (max-width: 63.9375em) and (orientation: landscape) {
 	nav.main-nav ul:first-child li:first-child {
 		margin-right: 2rem;
 		margin-left: 1rem;
@@ -762,10 +762,7 @@ footer {
 
 }
 
-/* ====================== MEDIUM SCREEN & Landscape 1023 ======================*/
 
-
-	
 
 /* ====================== Large and up ======================= */
 
