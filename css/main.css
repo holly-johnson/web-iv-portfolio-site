@@ -98,6 +98,10 @@ h1, h2, h3, .hover h2 {
 	margin-bottom: 1.5rem;
 }
 
+#project h1 span#partee-header {
+	margin-bottom: 0;
+}
+
 #project h1, #slider h2, footer a:hover {
 	color: #4abfa4;
 }
@@ -255,7 +259,6 @@ p {
 #about h2 {
 	margin-bottom: 0;
 }
-
 
 /* =============== Buttons ==============*/
 
@@ -443,7 +446,10 @@ footer {
 
 /* =============== Floats, Positions, Displays ==============*/
 
-
+.partee img {
+		margin: 0 auto;
+		display: block;
+	}
 
 
 
@@ -550,10 +556,6 @@ footer {
  		height: 545px;
 	}
 	
-	.partee img {
-		margin: 0 auto;
-		display: block;
-	}
 
 	
 	/* =============== Padding and Margin ==============*/
@@ -758,6 +760,12 @@ footer {
 		font-size: 1rem;
 		line-height: 1.35rem;
 	}
+	
+	#project .hover div.demo h2 {
+		font-size: 3.5rem;
+		line-height: 2.5rem;
+	}
+	
 	
 
 }
