@@ -129,7 +129,7 @@ section#slider h2 {
 	display: none;  
 	height:100%;
 	width:100%;
-	background-color: rgba(254,212,0,0.7);
+	background-color: rgba(254,212,0,0.95);
 	position:absolute;
 	top:0;
 	left:0;
@@ -419,6 +419,10 @@ footer ul {
     height: auto;
     padding-top: 100%;
 	border: 7px solid white;
+}
+
+p#campus-commerce-copy {
+	margin-bottom: 0;
 }
 
 /* ====================== Utility =======================*/
