@@ -784,11 +784,11 @@ footer {
 
 @media screen and (min-width: 64em) {
 	#hero, .toggle-image {
- 		height: 556px;
+ 		height: 600px;
 	}
 	
 	#hero-padding {
-		padding-top: 15.15rem;
+		padding-top: 18rem;
 	}
 	
 	.about-img {
