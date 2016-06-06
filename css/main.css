@@ -23,13 +23,10 @@
 --------------------------------------6.1 Colors
 --------------------------------------6.2 Floats, Positions, Displays
 --------------------------------7 Media Queries
---------------------------------------4.1 Typography
---------------------------------------4.2 Structure
-------------------------------------------4.2.1 Padding and Margin
-------------------------------------------4.2.2 Header
-------------------------------------------4.2.3 Footer
-------------------------------------------4.2.4 Positions, Floats, Widths
---------------------------------------5.1 Media
+--------------------------------------7.1 Small
+--------------------------------------7.2 Medium
+--------------------------------------7.3 Medium Landscape
+--------------------------------------7.4 Large
 
 
 */
@@ -52,7 +49,7 @@ p {
 	line-height: 1.9rem;
 }
 
-#hero, #about, footer, footer p, #about p, a, a:hover {
+#hero, #about, footer, footer p, #about p, a, a:hover, .hover h2 {
 	color: white;
 }
 
@@ -66,7 +63,7 @@ p {
 
 /* =============== 1.2 Headings ==============*/
 
-h1, h2, h3, .hover h2 {
+h1, h2, h3, .hover h2, nav a {
 	font-family: "proxima-nova-soft",sans-serif;
 }
 
@@ -91,7 +88,6 @@ h1, h2, h3, .hover h2 {
 #project h1 span {
 	text-transform: uppercase;
     letter-spacing: .2rem;
-    font-weight: 500;
 	color: #666;
 	display: block;
 	line-height: 2.25rem;
@@ -106,75 +102,22 @@ h1, h2, h3, .hover h2 {
 	color: #4abfa4;
 }
 
+footer h3 {
+    font-weight: 700;
+}
+
+/* =============== 1.3 Buttons ==============*/
+
 .hover .demo h2 {
 	font-size: 5rem;
 	padding-top: 17%;
 }
 
-footer h3 {
-    font-weight: 700;
-}
-
-section#slider h2 {
+section#slider h2, .hover h2 {
 	text-align: center;
 }
 
-/* =============== 1.3 Buttons ==============*/
-
-.hover div {
-	position: relative;
-}
-
-.hover h2 {
-	display: none;  
-	height:100%;
-	width:100%;
-	background-color: rgba(254,212,0,0.95);
-	position:absolute;
-	top:0;
-	left:0;
-	text-align:center;
-	color:white;
-	padding-top: 12%;
-	margin:0;
-	font-weight: 500;
-    font-size: 3rem;
-}
-
-#for-the-good-thumb h2 {
-	padding-top: 14%;
-}
-
-#twin-finch-thumb h2 {
-	padding-top: 10%;
-}
-
-#young-living-thumb h2 {
-	padding-top: 7%;
-}
-
-#fort-collins-thumb h2 {
-    padding-top: 14%;
-}
-
-#partee-thumb h2 {
-    padding-top: 45%;
-}
-
-#campus-commerce-thumb h2 {
-	padding-top: 10%;
-}
-
-#campus-commerce-demo h2 {
-	padding-top: 20%;
-}
-
-nav a {
-	font-family: "proxima-nova-soft",sans-serif;
-	font-size: 1.2rem;
-}
-
-footer, h2 {
+#project h1 span, footer, h2, .hover h2 {
     font-weight: 500;
 }
 
@@ -185,6 +128,10 @@ h2 {
 /* ====================== Navigation =======================*/
 
 /* =============== Main ==============*/
+
+nav a {
+	font-size: 1.2rem;
+}
 
 ul li {
 	display: inline-block;
@@ -210,18 +157,6 @@ nav.main-nav ul:first-child li {
 
 #hero-padding {
 	padding-top: 15.9rem; 
-}
-
-header.nav {
-	padding-top: 1rem;
-}
-
-.nav-project-page header img {
-	padding-top: .3rem;
-}
-
-.nav-project-page nav ul.float-left, #hero nav.main-nav ul.float-left {
-	padding-top: .3rem;
 }
 
 .gallery, .small-gallery {
@@ -262,6 +197,51 @@ p {
 
 /* =============== Buttons ==============*/
 
+.hover div {
+	position: relative;
+}
+
+.hover h2 {
+	display: none;  
+	height:100%;
+	width:100%;
+	background-color: rgba(254,212,0,0.95);
+	position:absolute;
+	top:0;
+	left:0;
+	padding-top: 12%;
+	margin:0;
+    font-size: 3rem;
+}
+
+#for-the-good-thumb h2 {
+	padding-top: 14%;
+}
+
+#twin-finch-thumb h2 {
+	padding-top: 10%;
+}
+
+#young-living-thumb h2 {
+	padding-top: 7%;
+}
+
+#fort-collins-thumb h2 {
+    padding-top: 14%;
+}
+
+#partee-thumb h2 {
+    padding-top: 45%;
+}
+
+#campus-commerce-thumb h2 {
+	padding-top: 10%;
+}
+
+#campus-commerce-demo h2 {
+	padding-top: 20%;
+}
+
 .demo-button {
 	background-color: #4abfa4;
     width: 45%;
@@ -271,7 +251,7 @@ p {
     padding: 1rem;
     text-transform: uppercase;
     letter-spacing: .00rem;
-    margin-bottom: 4rem;
+    margin-bottom: 4rem; /*can't use shorthand because of the centering above*/
 	margin-top: 3rem;
 }
 
@@ -291,7 +271,13 @@ p {
 
 /* =============== Header ==============*/
 
+header.nav {
+	padding-top: 1rem;
+}
 
+.nav-project-page nav ul.float-left, #hero nav.main-nav ul.float-left, .nav-project-page header img {
+	padding-top: .3rem;
+}
 
 /* =============== Footer ==============*/
 
@@ -338,8 +324,7 @@ li.sprite a {
 }
 
 footer ul {
-    margin-top: .5rem;
-	margin-bottom: .5rem;
+    margin: .5rem 0;
 }
 
 
@@ -383,21 +368,16 @@ footer ul {
 	opacity: 0;
 }
 
-.first-image.show {
+.first-image.show, .second-image.show, .third-image.show {
 	opacity: 1;
 }
 
-.second-image.show {
-	opacity: 1;
-}
-
-.third-image.show {
-	opacity: 1;
+#svg-one, #svg-three {
+	width: 27%;
+	float: right;
 }
 
 #svg-one {
-	width: 27%;
-    float: right;
     margin-top: -20%;
 }
 
@@ -407,8 +387,6 @@ footer ul {
 }
 
 #svg-three {
-	width: 27%;
-    float: right;
     margin-top: -45%;
 }
 
@@ -430,11 +408,10 @@ p#campus-commerce-copy {
 /* =============== Colors ==============*/
 
 #hero {
-	background-color: rgba(254,212,0,0.7);
 	height: 588px;
 }
 
-.nav-project-page {
+.nav-project-page, #hero {
 	background-color: rgba(254,212,0,0.7);
 }
 
@@ -460,32 +437,6 @@ footer {
 	}
 
 
-
-
-
-
-
-
-/* ====================== Media Queries (From Foundation 6 Docs) =======================*/
-
-/* Small only */
-@media screen and (max-width: 39.9375em) {}
-
-/* Medium Landscape Orientation */
-@media screen and (min-width: 40em) {}
-
-/* Medium and up */
-@media screen and (min-width: 40em) {}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
-
-/* Large and up */
-@media screen and (min-width: 64em) {}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
-
 /* ====================== SMALL SCREEN - Small only - 640 ======================*/
 
 @media screen and (max-width: 39.9375em) {
@@ -510,11 +461,14 @@ footer {
 		line-height: 3rem;
 	}
 	
+	h2.show-for-small-only span, #project h1 span {
+		font-size: 1rem;
+	}
+	
 	h2.show-for-small-only span {
 		display: block;
 		color: #666;
 		text-transform: uppercase;
-		font-size: 1rem;
 		line-height: 1.3rem;
 		padding-bottom: .5rem;
 	}
@@ -527,7 +481,6 @@ footer {
 	
 	#project h1 span {
 		line-height: 2.5rem;
-		font-size: 1rem;
 	}
 	
 	#slider h2 {
@@ -558,13 +511,11 @@ footer {
 	}
    
    	/* ======================= Structure =======================*/
-
 	
 	#hero, .toggle-image {
  		height: 545px;
 	}
 	
-
 	
 	/* =============== Padding and Margin ==============*/
    
@@ -577,21 +528,12 @@ footer {
 		padding-top: 8rem;
 	}
 	
-	nav.main-nav ul:first-child li {
-		margin-right: 2rem;
-	}
-	
-	nav.main-nav ul:first-child li:last-child {
-		margin-right: 0;
-	}
-	
 	#work div.hover {
 		margin-bottom: 3rem;
 	}
 	
 	#slider {
-		padding-top: 10%;
-		padding-bottom: 25%;
+		padding: 10% 0 25% 0;
 	}
 	
 	.medium-push-7 {
@@ -601,14 +543,6 @@ footer {
 	
 	#about {
 		padding: 17% 0;
-	}
-	
-	footer div.small-5 {
-		padding-right: 0;
-	}
-	
-	footer div.small-7 {
-		padding-left: 0;
 	}
 	
 	#project h1 span#partee-header {
@@ -627,20 +561,31 @@ footer {
    
    	/* =============== Header ==============*/
     
-
+	nav.main-nav ul:first-child li {
+		margin-right: 2rem;
+	}
+	
+	nav.main-nav ul:first-child li:last-child {
+		margin-right: 0;
+	}
 	
 	/* =============== Footer ==============*/
 	
-	footer {
-		padding-bottom: 30%;
-		padding-top: 5%;
+	footer div.small-5 {
+		padding-right: 0;
 	}
+	
+	footer div.small-7 {
+		padding-left: 0;
+	}
+	
+	footer {
+		padding: 5% 0 25% 0;
+	}
+	
 	footer div.medium-6 > img {
 		width: 10%;
 	}
-	
-	/* =============== Positions, Floats, Widths ==============*/
-	
 	
 	
 	/* ======================= Media =======================*/
@@ -654,33 +599,17 @@ footer {
 	
 	}
 	
-
-	
 	
 /* ====================== MEDIUM SCREEN 1023 ======================*/
 
 @media only screen and (min-width: 40em)  { 
 
- 	/* ======================= Typography ======================*/
-   
-   	/*h2.hide-for-small-only {
-		font-size: 2.5rem;
-	}*/
-   
    	/* ======================= Structure =======================*/
    
    #hero-padding {
 		padding-top: 15.15rem;
 	}
 
-   
-   	/* =============== Header ==============*/
-    
-
-	
-	/* =============== Footer ==============*/
-	
-	
 	/* =============== Positions, Floats, Widths ==============*/
 	
 	.medium-push-7 {
@@ -712,8 +641,7 @@ footer {
 		width: 100%;
 	}
 
-
-}
+	}
 
 
 /* ==================== Medium Landscape Orientation ================== */
@@ -775,8 +703,7 @@ footer {
 	}
 	
 	
-
-}
+	}
 
 
 
@@ -799,4 +726,4 @@ footer {
 	}
 
 		
-}
+	}
